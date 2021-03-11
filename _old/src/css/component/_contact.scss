@@ -1,0 +1,104 @@
+.contact{
+  .page-header{
+    background-image: url(../images/contact/contact_header@2x.png);
+  }
+}
+
+.contact .block--contents--table dt{
+  @include min-screen($break_point_min) {
+    width: 195px;
+  }
+}
+
+.block--contents--table {
+  margin-top: 60px;
+  border-left: solid 2px $lightgray;
+  border-right: solid 2px $lightgray;
+  background-color: #fff;
+  @include max-screen($break_point_min) {
+    margin-top: 20px;
+  }
+  .block--contents--table_header{
+    background-color: #f1f9ff;
+    color: $blue;
+    font-weight: bold;
+    border-bottom: solid 2px $blue !important;
+    @include max-screen($break_point_min) {
+      display: none;
+    }
+  }
+  dl {
+    border-top: 2px solid $lightgray;
+    &:last-child {
+      border-bottom: 2px solid $lightgray;
+    }
+  }
+
+  dt {
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+    color: $brown;
+    @include min-screen($break_point_min) {
+      display: inline-block;
+      width: 168px;
+      padding: 15px;
+      vertical-align: top;
+    }
+  }
+
+  dd {
+    font-size: 15px;
+    padding: 15px 10px;
+    border-top: 2px solid $gray;
+    @include min-screen($break_point_min) {
+      position: relative;
+      display: inline-block;
+      padding: 15px 25px;
+      border: none;
+    }
+
+    &:before {
+      @include min-screen($break_point_min) {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 89%;
+        top: 5%;
+        left: 0;
+      }
+    }
+  }
+
+  &--dot{
+    padding-left: 1em;
+    text-indent: -1em;
+    &:before {
+      content: "・";
+    }
+  }
+
+}
+.privacy_list{
+  list-style-type: decimal;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  li{
+
+  }
+}
+
+.mw_wp_form_complete{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: $gray;
+  max-width: 550px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  @include max-screen($break_point_min) {
+    width: 90%;
+  }
+}

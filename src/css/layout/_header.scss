@@ -3,12 +3,124 @@
 common header
 ==========================*/
 
-@media screen and (min-width: 979px){
+.l-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+  background-color: $black;
+  padding-top: 10px;
+  height: 50px;
+  //border-bottom: solid 1px $lightgray;
+//  background: #fff;
+  @include min-screen($break_point_pc) {
+      min-width: 960px;
+      height: 95px;
+  }
 
-  .site-logo {
-      float: left;
-      position: relative;
-      width: 120px;
-      // top: 35px;
+  &.header-fixed {
+
+  }
+
+  .l-container{
+    position: relative;
+    top: 0px;
+    z-index: 10;
+    width: 100% !important;
+    padding: 10px 10px;
+    background-color: rgba(255,255,255,0.9);
+    padding-bottom: 10px;
+    @include max-screen($break_point_pc) {
+      padding: 0;
+      top: 7px;
+    }
+  }
+}
+
+
+.header-top {
+  @include clearfix;
+  line-height: 1;
+  max-width: 960px;
+  margin: auto;
+  position: relative;
+  @include max-screen($break_point_pc) {
+    text-align: left;
+    width:100%;
+  }
+  p.top-text{
+    text-align: left;
+    color: #FFF;
+    font-size: 11px;
+    display: block;
+    @include max-screen($break_point_pc) {
+      display: none;
+    }
+  }
+
+  .header-logo {
+    position: relative;
+    margin: auto;
+    width: 100px;
+    display: inline-block;
+    margin-right: 15px;
+    padding-left: 10px;
+    @include max-screen($break_point_pc) {
+      position: absolute;
+      top: -5px;
+      left: 10px;
+    }
+    img{
+      height: auto;
+      width:100%;
+      @include max-screen($break_point_pc) {
+      width: auto;
+      height: 35px;
+    }
+
+    }
+    @include max-screen($break_point_pc) {
+      width: 130px;
+      margin: inherit;
+
+
+    }
+    a {
+      display: block;
+    }
+  }
+
+  .header-contact{
+    //background: linear-gradient(to bottom, #3e71ff,#574eff);
+    background: #ff3100;
+    height: auto;
+    width: 148px;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border:none;
+
+      @include min-screen($break_point_pc) {
+        position: relative;
+        right:0;
+      }
+
+    i{
+      margin-top: 3px;
+      font-size: 18px;
+      @include min-screen($break_point_pc) {
+        font-size: 15px;
+        margin-right: 5px;
+      }
+    }
+
+  }
+
+}
+
+.menu-open{
+  .l-header{
+    padding-bottom: 15px;
   }
 }

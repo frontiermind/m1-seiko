@@ -147,7 +147,12 @@ $( function() {
     });
   }
 
-
+  function sidemenu_open() {
+    $('.l-sidebar_sp_open').on("click", function() {
+      $(".l-sidebar_inner").toggleClass("l-sidebar_inner_open");
+      $(this).toggleClass("is_open");
+    });
+  }
 
 
   mouseOver();
@@ -158,6 +163,7 @@ $( function() {
   spChildnav();
   accordion();
   reform_flow_toggle();
+  sidemenu_open();
 
 
 

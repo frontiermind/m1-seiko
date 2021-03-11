@@ -1,0 +1,108 @@
+<%-
+  include('../common/_head', {
+    page: json['contact']
+  });
+%>
+<% include ../common/_header %>
+
+<!-- ここからコンテンツ -->
+
+<div class="main-block">
+  <div class="mainvisual">
+
+    <div class="l-container">
+      <h2>
+      <span>
+        CONTACT
+      </span>
+      お問い合わせ
+      </h2>
+      </div>
+
+    </div>
+
+    <main id="main" class="l-main">
+
+      <section class="page-content">
+
+        <section class="page-block">
+
+
+          <div class="page-block--contents">
+            <div class="l-container">
+
+              <section class="sec-content pege-first_txt" >
+                <div class="l-container">
+
+                  <h3>メールでのお問い合わせは以下のフォームよりお願いします</h3>
+
+                  <p>
+                  株式会社ディアスへのお問い合わせありがとうございます。<br>
+                  内容を確認次第、メールにてご連絡致します。<br>
+                  尚、お問い合わせ内容によりましては、回答に時間がかかる場合がございます。<br>
+                  <br>
+                  また、お客さまからいただいたEメールアドレスが違っている場合や、システム障害などによりお返事できない場合がございます。大変お手数ですが返答のない場合は、お電話でその旨お問い合わせください。<br>
+                  <br>
+                  ■お問い合わせ情報は、フォームにご記入頂きましたメールアドレス宛にも自動返送されます。<br>
+                  <br>
+                  ※印は必須項目となっております。
+                </p>
+                </div>
+              </section>
+
+
+              <form action="mail.php" method="post">
+              <div class="block--contents--table">
+                <dl>
+                  <dt>氏名<span class="u-c-red">※</span></dt>
+                  <dd><input type="text" name="お名前" placeholder="（例：山田　太郎）" required></dd>
+                </dl>
+                <dl>
+                  <dt>フリガナ<span class="u-c-red">※</span></dt>
+                  <dd><input type="text" name="フリガナ" placeholder="（例：ヤマダ　タロウ）" required></dd>
+                </dl>
+                <dl>
+                  <dt>郵便番号</dt>
+                  <dd><input type="text" name="郵便番号" placeholder="（半角入力　例：103-0001）"></dd>
+                </dl>
+
+                <dl>
+                  <dt>住所</dt>
+                  <dd><input class="full-width" type="text" name="住所" placeholder="（例:東京都中央区日本橋小伝馬町12-5）"></dd>
+                </dl>
+                <dl>
+                  <dt>電話番号<span class="u-c-red">※</span></dt>
+                  <dd><input type="text" name="電話番号" placeholder="（半角入力 例:03-1234-5678 携帯可）" required></dd>
+                </dl>
+                <dl>
+                  <dt>メールアドレス<span class="u-c-red">※</span></dt>
+                  <dd><input class="full-width" type="text" name="メールアドレス" placeholder="（半角入力 例:abc@defg.co.jp）" required></dd>
+                </dl>
+
+                <dl>
+                  <dt>お問い合わせ内容<span class="u-c-red">※</span></dt>
+                  <dd><textarea name="内容" required></textarea></dd>
+                </dl>
+              </div>
+
+              <div class="u-ta-c u-mt-30">
+                <input class="btn btn-submit js-submit" type="submit" value="送信">
+              </div>
+            </form>
+              </div>
+
+          </div>
+        </section>
+
+      </section>
+
+    </main>
+    <!-- / main -->
+
+
+  </div>
+
+  <!-- ここまでコンテンツ -->
+
+
+  <% include ../common/_footer %>

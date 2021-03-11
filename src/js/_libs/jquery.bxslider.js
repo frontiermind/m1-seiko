@@ -10,7 +10,7 @@
   var defaults = {
 
     // GENERAL
-    mode: 'horizontal',
+    mode: 'fade',
     slideSelector: '',
     infiniteLoop: true,
     hideControlOnEnd: false,
@@ -32,7 +32,7 @@
     wrapperClass: 'bx-wrapper',
 
     // TOUCH
-    touchEnabled: true,
+    touchEnabled: false,
     swipeThreshold: 50,
     oneToOneTouch: true,
     preventDefaultSwipeX: true,
@@ -66,8 +66,8 @@
     autoControlsSelector: null,
 
     // AUTO
-    auto: false,
-    pause: 4000,
+    auto: true,
+    pause: 2000,
     autoStart: true,
     autoDirection: 'next',
     stopAutoOnClick: false,

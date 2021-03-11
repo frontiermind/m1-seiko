@@ -10,6 +10,10 @@ html {
 
 body {
 	background: $white; /* Fallback for when there is no custom background color defined. */
+	padding-top: 50px;
+	@include min-screen($break_point_pc) {
+	  padding-top: 80px;
+  }
 }
 
 blockquote, q {

@@ -1,34 +1,24 @@
 .pagetop {
   display: none;
-  width: 110px;
+  width: 205px;
   position: fixed;
   bottom: 80px;
-  right: 10px;
-  // border-bottom: solid 1px $brown;
+  right: 0px;
+  border-bottom: solid 1px $brown;
   font-family: 'Barlow', sans-serif;
   padding-bottom: 6px;
-  padding-left: 5px;
+padding-left: 5px;
 @include max-screen($break_point_max) {
   width: 75px;
   position: fixed;
   bottom: 50px;
 }
   a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: $red;
-    border-radius: 10px;
     text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
-    color:$white;
+    font-size: 15px;
+      color:$brown;
     @include max-screen($break_point_max) {
       font-size: 13px;
-    }
-    span{
-      transform: translateY(5px);
     }
   }
 }
