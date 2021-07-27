@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*=========================
 common lower page header
 ==========================*/
@@ -260,3 +261,30 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+=======
+/*=========================
+common lower page header
+==========================*/
+
+.page__header {
+  background-image: url(../images/common/bg_common_header.jpg);
+}
+
+header#header{
+  background: rgba(59,121,178,0.85);
+  position: fixed;
+  width: 100%;
+  .inner{
+    //min-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #gnav{
+    a{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+>>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300

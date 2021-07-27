@@ -36,6 +36,11 @@ global-navigation
       padding-bottom: 20px;
       text-align: center;
       display: inline-block;
+<<<<<<< HEAD
+=======
+      border-bottom: solid 1px #ddd;
+      background: #ddd;
+>>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300
       @include min-screen($break_point_pc) {
         width: auto;
         padding-bottom: 0px;
@@ -45,7 +50,14 @@ global-navigation
         border-left: solid 1px $white;
         padding: 5px 20px 5px 20px;
       }
+<<<<<<< HEAD
 
+=======
+      //@include max-screen($break_point_980) {
+      //  margin: 0 20px 0 0;
+    //    padding: 9px 0px;
+    //  }
+>>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300
       &.gnavi-list__home {
         @include min-screen($break_point_pc) {
           display: none;
