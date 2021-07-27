@@ -108,7 +108,7 @@ common footer
 
 .contact-sec{
   margin-top: 50px;
-  background: $blue-gradient_left;
+  //background: $blue-gradient_left;
   padding: 20px;
   @include min-screen($break_point_pc) {
   padding: 50px 0px;

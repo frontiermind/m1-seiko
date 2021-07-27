@@ -7,3 +7,113 @@ ol > li:before{
     content: '';
   }
 
+
+.home{
+
+  #mainvisual{
+    position: relative;
+    line-height: 0;
+    .main-image{
+      margin-bottom: -375px;
+    }
+
+    .main-copy{
+      position: absolute;
+      z-index: 21;
+      padding: 55px 80px;
+      box-sizing: border-box;
+      height: 375px;
+      bottom: 0;
+      h2{
+        font-size: 32px;
+        line-height: 64px;
+        color:#FF0000;
+        font-weight:600;
+        letter-spacing: 2px;
+      }
+    }
+
+    .main-copy_bg{
+      position: relative;
+      display: inline-block;
+      bottom: 0;
+      z-index: 20;
+      height: 375px;
+      width: 700px;
+      //background: rgba(255,255,255,0.75);
+      background: #fff;
+      //padding: 55px 80px 170px 80px;
+      opacity: 0.75;
+      &::after{
+        content:"";
+        width: 170px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top:0;
+        z-index: 99;
+        background: #FFF;
+        border-right: 40px solid #FF0000;
+        transform: skewX(-20deg);
+        right: -90px;
+        //opacity: 0.75;
+      }
+    }
+  }
+
+  .top-operation{
+    width: 1230px;
+    background: #1A1A1A;
+    margin: 0 auto;
+    border-radius: 16px;
+    &_inner{
+      display: flex;
+
+      h2{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        background: #ddd;
+        padding-left: 40px;
+        span{
+          background: #fff;
+          display: block;
+          width: 100%;
+        }
+      }
+
+      ul{
+        display: flex;
+        padding: 20px 0;
+        justify-content: flex-end;
+        >li{
+          width: 25%;
+          text-align: center;
+          padding: 0 40px;
+          color: #00E4FF;
+          line-height: 1;
+          h3{
+            font-size: 18px;
+            margin-bottom: 14px;
+          }
+          p.operation_percent{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: -5px;
+            margin-bottom: 5px;
+          }
+          p.possible{
+            display: inline-block;
+            color: #333;
+            background: #00E4FF;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+
+}

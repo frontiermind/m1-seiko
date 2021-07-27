@@ -20,16 +20,17 @@ global-navigation
       text-align: center;
       display: inline-block;
       border-bottom: solid 1px #ddd;
+      background: #ddd;
       @include min-screen($break_point_pc) {
         width: auto;
         margin: 0 35px 0 0;
         padding-bottom: 0px;
         border-bottom: none;
       }
-      @include max-screen($break_point_980) {
-        margin: 0 20px 0 0;
-        padding: 9px 0px;
-      }
+      //@include max-screen($break_point_980) {
+      //  margin: 0 20px 0 0;
+    //    padding: 9px 0px;
+    //  }
       &.gnavi-list__home {
         @include min-screen($break_point_pc) {
           display: none;

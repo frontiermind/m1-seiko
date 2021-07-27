@@ -21,20 +21,20 @@ $( function() {
   }
 
 
-  function slider() {
-    var $slider = $('.js-slider');
-    var $sliderList = $slider.find('li');
-    $slider.bxSlider({
-      mode: 'fade',
-      auto: true,
-      controls: false,
-      pager: false,
-      usecss:false,
-      pause: 4000,
-      essing: 'linear',
-      speed: 1000,
-    });
-  }
+//  function slider() {
+//    var $slider = $('.js-slider');
+//    var $sliderList = $slider.find('li');
+//    $slider.bxSlider({
+//      mode: 'fade',
+//      auto: true,
+//      controls: false,
+//      pager: false,
+//      usecss:false,
+//      pause: 4000,
+//      essing: 'linear',
+//      speed: 1000,
+//    });
+//  }
 
   function spChildnav() {
     var $childBtn = $('.js-sp-child');

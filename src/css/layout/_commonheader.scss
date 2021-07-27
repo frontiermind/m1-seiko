@@ -7,12 +7,15 @@ common lower page header
 }
 
 header#header{
-  border-radius: 0px 0px 50% 50% / 5px 5px 15% 15%;
-  background: $black;
-  .nav-sitemap{
-    color: $white;
-    text-decoration: none;
+  background: rgba(59,121,178,0.85);
+  position: fixed;
+  width: 100%;
+  .inner{
+    //min-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
   }
+
   #gnav{
     a{
       color: $white;
