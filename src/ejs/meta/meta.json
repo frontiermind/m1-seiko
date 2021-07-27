@@ -1,82 +1,58 @@
 {
   "default": {
-    "bodyclass": "index",
-    "title": "高輪精機",
-    "description": "高輪精機はお客様との関係を単なる商品のみの関係で終えるのではなく、お客様の生産現場で抱える多種多様な諸問題に一緒になって考え、そしてご提案し、きめの細かいフォローをしていきます。",
-    "canonical": "https://www.takanawaseiki.co.jp/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
+    "bodyclass": "home",
+    "title": "大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
   },
 
   "home": {
-    "bodyclass": "index",
-    "title": "高輪精機",
-    "description": "高輪精機はお客様との関係を単なる商品のみの関係で終えるのではなく、お客様の生産現場で抱える多種多様な諸問題に一緒になって考え、そしてご提案し、きめの細かいフォローをしていきます。",
-    "canonical": "https://www.takanawaseiki.co.jp/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
+    "bodyclass": "home",
+    "title": "大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
   },
 
-  "hydraulic": {
-    "bodyclass": "products hydraulic",
-    "title": "高輪精機 | 油圧機器",
-    "description": "高輪精機株式会社の油圧機器ページです。油圧機器についての説明を掲載しています。",
-    "canonical": "https://www.takanawaseiki.co.jp/products/hydraulic/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
+  "products": {
+    "bodyclass": "products l-page",
+    "title": "事業内容 - 大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/products/",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
   },
 
-  "flowmeter": {
-    "bodyclass": "products flowmeter",
-    "title": "高輪精機 | 流量計",
-    "description": "高輪精機株式会社の流量計ページです。流量計についての説明を掲載しています。",
-    "canonical": "https://www.takanawaseiki.co.jp/products/flowmeter/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
-  },
-
-  "air_pressure": {
-    "bodyclass": "products air_pressure",
-    "title": "高輪精機 | 空気圧機器",
-    "description": "高輪精機株式会社の空圧機器ページです。空圧機器についての説明を掲載しています。",
-    "canonical": "https://www.takanawaseiki.co.jp/products/air_pressure/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
-  },
-
-  "machine": {
-    "bodyclass": "products machine",
-    "title": "高輪精機 | 工作機械",
-    "description": "高輪精機株式会社の工作機器ページです。工作機器についての説明を掲載しています。",
-    "canonical": "https://www.takanawaseiki.co.jp/products/machine/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
-  },
-
-  "contact": {
-    "bodyclass": "contact",
-    "title": "高輪精機 | お問い合わせ",
-    "description": "高輪精機株式会社のお問い合わせページです。気になることがございましたらお気軽にお問い合わせください。",
-    "canonical": "https://www.takanawaseiki.co.jp/contact/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
+  "products-single": {
+    "bodyclass": "products products-single single l-page",
+    "title": "事業内容 - 大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/products/",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
   },
 
   "company": {
-    "bodyclass": "company",
-    "title": "高輪精機 | 会社概要",
-    "description": "高輪精機株式会社の会社概要ページです。会社概要やアクセスマップ、沿革などを掲載しています。",
-    "canonical": "https://www.takanawaseiki.co.jp/company/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
+    "bodyclass": "company l-page",
+    "title": "会社案内 - 大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/company/",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
+  },
+  "contact": {
+    "bodyclass": "contact l-page",
+    "title": "お問い合わせ - 大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/contact/",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
   },
 
-  "privacy": {
-    "bodyclass": "privacy",
-    "title": "高輪精機 | プライバシーポリシー",
-    "description": "高輪精機株式会社のプライバシーポリシーページです。個人情報の取り扱いについて掲載しています。",
-    "canonical": "https://www.takanawaseiki.co.jp/privacy/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
-  },
 
   "thanks": {
-    "bodyclass": "thanks",
-    "title": "高輪精機 | お問い合わせありがとうございました",
-    "description": "高輪精機はお客様との関係を単なる商品のみの関係で終えるのではなく、お客様の生産現場で抱える多種多様な諸問題に一緒になって考え、そしてご提案し、きめの細かいフォローをしていきます。",
-    "canonical": "https://www.takanawaseiki.co.jp/company/",
-    "keywords": "高輪精機,高輪,油圧機器,空圧機器,流量計,工作機械,測定,複合技術,生産,省力化,自動化"
+    "bodyclass": "thanks l-page",
+    "title": "お問い合わせありがとうございました - 大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/contact/thanks.html",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
   }
 
 

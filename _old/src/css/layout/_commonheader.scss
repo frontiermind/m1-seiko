@@ -1,0 +1,22 @@
+/*=========================
+common lower page header
+==========================*/
+
+.page__header {
+  background-image: url(../images/common/bg_common_header.jpg);
+}
+
+header#header{
+  border-radius: 0px 0px 50% 50% / 5px 5px 15% 15%;
+  background: $black;
+  .nav-sitemap{
+    color: $white;
+    text-decoration: none;
+  }
+  #gnav{
+    a{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

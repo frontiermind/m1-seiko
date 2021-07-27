@@ -1,0 +1,164 @@
+/* ==========================
+  section title
+=========================== */
+.sec__title {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: $white;
+  @include min-screen($break_point_min) {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -19px;
+    width: 38px;
+    height: 2px;
+    display: block;
+    content: "";
+    background-color: $navy;
+    @include min-screen($break_point_min) {
+      width: 74px;
+      margin-left: -37px;
+    }
+  }
+}
+
+.sec__subtitle {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 18px;
+  @include min-screen($break_point_min) {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+    height: 2px;
+    content: "";
+    display: inline-block;
+    background-color: $gold;
+    @include min-screen($break_point_min) {
+      width: 100px;
+      margin-left: -50px;
+    }
+  }
+}
+
+.page-header{
+  width: 100%;
+  height: 260px;
+  margin: auto;
+  margin-top: 70px;
+  background-size: cover;
+  background-position: left;
+  padding: 10px;
+  @include max-screen($break_point_pc) {
+    width: 100%;
+    margin-top: 50px;
+  }
+  &_inner{
+    display: flex;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+    @include max-screen($break_point_pc) {
+
+    }
+    h2{
+      text-align: center;
+      font-size: 27px;
+      color: $white;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      @include max-screen($break_point_min) {
+        font-size: 27px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      span{
+        font-family: 'Prompt', sans-serif;
+        display:block;
+        font-size: 13px;
+        @include min-screen($break_point_pc) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.mini_tlt_txt {
+  max-width: 390px;
+  margin: 60px auto auto;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  @include max-screen($break_point_pc) {
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 40px;
+  }
+  h3{
+    font-family: 'Barlow', sans-serif;
+    border-bottom: solid 1px $brown;
+    padding: 0px 20px;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    color: $brown;
+    span{
+      font-size: 12px;
+      display: block;
+      color: $gray;
+    }
+  }
+
+  p {
+    padding-bottom: 10px;
+    border-bottom: solid 1px $brown;
+    margin-bottom: 10px;
+  }
+}
+
+.top-sec__title{
+  background-image: url(../images/index/top_pd_bg@2x.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: $white;
+  font-size: 24px;
+  padding: 50px 0px;
+  margin-bottom: 40px;
+  @include min-screen($break_point_pc) {
+    padding: 70px 0px;
+    font-size: 33px;
+  }
+  span{
+    font-family: 'Prompt', sans-serif;
+    display:block;
+    font-size: 13px;
+    @include min-screen($break_point_pc) {
+      font-size: 15px;
+    }
+  }
+
+}
+.top-maker_sec {
+  .top-sec__title{
+    background-image: url(../images/index/top_maker_bg@2x.png);
+  }
+}

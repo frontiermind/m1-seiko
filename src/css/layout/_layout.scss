@@ -14,13 +14,7 @@
   }
 }
 .l-main {
-  background-image: url(../images/common/bg_border@2x.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: repeat-y;
-  @include min-screen($break_point_pc) {
-      background-size: 980px;
-  }
+
 }
 
 .pege-first_txt{
@@ -39,49 +33,10 @@
 }
 
 .sec-content {
-
+  padding: 30px 0px;
 	@include min-screen($break_point_min) {
-
+    padding: 60px 0px;
 	}
-  .sec-content__inner {
-    padding: 0 8px;
-  }
-
-  p {
-    line-height: 2;
-  }
-
-  .sec-subcontent {
-    .sec-subtitle {
-      position: relative;
-      margin-bottom: 40px;
-      padding: 40px 0;
-      text-align: center;
-      font-family: $serif;
-      font-size: 14px;
-      letter-spacing: 0.5rem;
-      font-weight: normal;
-      @include min-screen($break_point_pc) {
-        margin-bottom: 80px;
-        padding: 60px 0;
-        font-size: 18px;
-    	}
-      &::after {
-        display: block;
-        content: "";
-        width: 1px;
-        height: 30px;
-        position: absolute;
-        bottom: -15px;
-        left: calc(50% - 4px);
-        background-color: $black;
-        @include min-screen($break_point_pc) {
-          height: 60px;
-          bottom: -30px;
-      	}
-      }
-    }
-  }
 }
 
 .top-section {
@@ -102,7 +57,7 @@
   @include clearfix;
   @include min-screen($break_point_pc) {
     padding: 0 $content_padding;
-    width: 1000px;
+    width: 1200px;
   }
 
 }
@@ -303,7 +258,7 @@ sub__content
 
 .page-container{
   @include max-screen($break_point_pc) {
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
   }
 }
 
@@ -322,8 +277,21 @@ sub__content
 }
 
 .page-container{
-  margin-bottom: 80px;
+  //margin-bottom: 80px;
   @include max-screen($break_point_min) {
-    margin-bottom: 40px;
+  //  margin-bottom: 40px;
   }
+}
+
+.side-contents{
+  .l-main {
+    box-shadow: 0 1px 11px -1px #ddd;
+    width: 100%;
+    padding: 20px;
+    @include min-screen($break_point_pc) {
+      width: calc(100% - 280px);
+      float: right;
+      padding: 40px;
+    }
+}
 }

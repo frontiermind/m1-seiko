@@ -1,0 +1,329 @@
+.l-wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+
+  @include min-screen($break_point_min) {
+
+  }
+}
+
+.main-block {
+  // padding: 35px 0;
+  @include min-screen($break_point_pc) {
+    padding: 0;
+  }
+}
+.l-main {
+  background-image: url(../images/common/bg_border@2x.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+  @include min-screen($break_point_pc) {
+      background-size: 980px;
+  }
+}
+
+.pege-first_txt{
+  padding: 40px 0px;
+  @include max-screen($break_point_pc) {
+    padding: 40px 0px;
+  }
+  p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+     @include max-screen($break_point_pc) {
+       font-size: 14px;
+     }
+  }
+}
+
+.sec-content {
+
+	@include min-screen($break_point_min) {
+
+	}
+  .sec-content__inner {
+    padding: 0 8px;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  .sec-subcontent {
+    .sec-subtitle {
+      position: relative;
+      margin-bottom: 40px;
+      padding: 40px 0;
+      text-align: center;
+      font-family: $serif;
+      font-size: 14px;
+      letter-spacing: 0.5rem;
+      font-weight: normal;
+      @include min-screen($break_point_pc) {
+        margin-bottom: 80px;
+        padding: 60px 0;
+        font-size: 18px;
+    	}
+      &::after {
+        display: block;
+        content: "";
+        width: 1px;
+        height: 30px;
+        position: absolute;
+        bottom: -15px;
+        left: calc(50% - 4px);
+        background-color: $black;
+        @include min-screen($break_point_pc) {
+          height: 60px;
+          bottom: -30px;
+      	}
+      }
+    }
+  }
+}
+
+.top-section {
+
+}
+
+.top-news {
+  padding: 30px 0 50px;
+	 @include min-screen($break_point_pc) {
+	  padding: 50px 0 60px;
+	}
+}
+
+
+.l-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  @include clearfix;
+  @include min-screen($break_point_pc) {
+    padding: 0 $content_padding;
+    width: 1000px;
+  }
+
+}
+
+/* ====================
+sub__content
+=======================*/
+
+.l-pages {
+  background-color: $darknavy;
+  padding-bottom: 30px;
+  @include min-screen($break_point_min) {
+		padding-bottom: 100px;
+	}
+}
+
+.sub__content {
+  padding: 30px 0 10px;
+	@include min-screen($break_point_min) {
+		padding: 80px 0 10px;
+	}
+}
+
+.col2_list{
+  li{
+    @include clearfix;
+    .col2_list_box{
+      width: 50%;
+      height: 500px;
+      @include max-screen($break_point_min) {
+        width: 100% !important;
+        float: none !important;
+      }
+    }
+    .top-muddy_menu_bg{
+      background-size: cover;
+      background-position: center;
+      float: left;
+      @include max-screen($break_point_min) {
+        height: 70vw !important;
+      }
+    }
+    .top-muddy_menu_txt{
+      padding: 100px;
+      padding-right: 0px;
+      float: right;
+      @include max-screen($break_point_min) {
+        height: auto !important;
+        padding: 20px;
+        padding-bottom: 35px;
+      }
+      h3{
+        font-family: 'Barlow', sans-serif;
+        font-size: 24px;
+        color: $brown;
+        padding-bottom: 10px;
+        border-bottom: solid 1px $brown;
+        margin-bottom: 30px;
+        font-weight: 300;
+        @include max-screen($break_point_min) {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        span{
+          font-size: 14px;
+          margin-left: 20px;
+        }
+      }
+      p{
+        font-size: 16px;
+        line-height: 35px;
+        color: $brown;
+        position: relative;
+        @include max-screen($break_point_min) {
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+      .btn{
+        margin-top: 30px;
+        @include max-screen($break_point_min) {
+          margin-top: 15px;
+        }
+      }
+    }
+    &:nth-of-type(even){
+      .top-muddy_menu_bg{
+        float: right;
+      }
+      .top-muddy_menu_txt{
+        float: left;
+        text-align: right;
+        padding-left: 0px;
+        padding-right: 100px;
+        @include max-screen($break_point_min) {
+          padding-right: 20px;
+          padding-left: 20px;
+          text-align: left;
+        }
+       }
+    }
+  }
+}
+
+
+
+.page-img_col_box{
+  li{
+    @include clearfix;
+    .img_col{
+      float: left;
+      width: 47.5%;
+      margin-top: 40px;
+      &:nth-of-type(even){
+        float: right;
+      }
+      img{
+        width: 100%;
+      }
+      @include max-screen($break_point_min) {
+        float: none !important;
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.img_col_txt{
+  width: 100%;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px $brown;
+  @include max-screen($break_point_pc) {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+  p{
+    display: inline-block;
+    color: $brown;
+    font-size: 16px;
+    &:first-child{
+      margin-right: 30px;
+      @include max-screen($break_point_pc) {
+        margin-right: 0px !important;
+        margin-top: 3px !important;
+      }
+    }
+    @include max-screen($break_point_pc) {
+      display: block;
+      font-size: 14px !important;
+    }
+  }
+}
+
+.img_col_arrow {
+  li {
+    .img_col {
+      position: relative;
+
+      &:first-child {
+        border: 10px;
+
+        &:after {
+          content: "▶︎";
+          display: block;
+          position: absolute;
+          right: -34px;
+          top: 50%;
+          color: $brown;
+          font-size: 17px;
+          @include max-screen($break_point_pc) {
+            content: "▼";
+            left: inherit;
+            top: inherit;
+            bottom: -30px;
+            right: 50%;
+            margin-right: -10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mini_txt{
+  margin-top: 30px;
+  color: $brown;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.page-container{
+  @include max-screen($break_point_pc) {
+    padding-bottom: 30px;
+  }
+}
+
+.border_txt{
+  color: $brown;
+  border:solid 1px $brown;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+  @include max-screen($break_point_min) {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+.page-container{
+  margin-bottom: 80px;
+  @include max-screen($break_point_min) {
+    margin-bottom: 40px;
+  }
+}

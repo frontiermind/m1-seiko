@@ -1,3 +1,130 @@
+<<<<<<< HEAD
+/*=========================
+common footer
+==========================*/
+
+.l-footer {
+  background-color: $blue;
+  width: 100%;
+  bottom: 0;
+  //position: absolute;
+  left: 0;
+  text-align: center;
+  margin-top: 100px;
+  padding: 50px 0px;
+  @include min-screen($break_point_pc) {
+    height: 210px;
+  }
+
+  .l-container{
+  padding: 0px;
+  display: flex;
+  }
+
+  .footer-menu_top{
+    width:100%;
+    position: relative;
+    a{
+        display: inline-block;
+        vertical-align: middle;
+        width:100%;
+        margin-bottom: 10px;
+        @include min-screen($break_point_pc) {
+          width:auto;
+          margin-bottom: 0;
+        }
+    img{
+      width:100px;
+      @include min-screen($break_point_pc) {
+      width:100px;
+      height: auto;
+    }
+
+    }
+
+    &::before{
+      display: none;
+    }
+  }
+    .footer-access{
+      display: block;
+      text-align: center;
+      font-size:12px;
+      box-sizing: border-box;
+      padding:0 5%;
+      color: $white;
+      margin-top: 20px;
+      @include min-screen($break_point_pc) {
+      display: inline-block;
+      width:320px;
+      vertical-align: middle;
+      padding:0;
+      padding-left: 10px;
+      text-align: left;
+      margin-top:0px;
+    }
+    }
+
+    &_box{
+      position: relative;
+      width: 100%;
+      @include min-screen($break_point_pc) {
+        width: 50%;
+      }
+    }
+  }
+
+  .footer-menu{
+    display: block;
+    margin:0 auto;
+    font-size:0;
+    letter-spacing: 0;
+    text-align: center;
+    @include min-screen($break_point_pc) {
+      text-align: left;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    li{
+      font-size:11px;
+      color: #FFF;
+      width: 100%;
+      padding:10px 0;
+      @include min-screen($break_point_pc) {
+        padding:0;
+      width:120px;
+    }
+
+      a{
+        color:#FFF;
+        display: inline;
+        position: relative;
+        text-decoration: none;
+        font-weight: bold;
+        &::before{
+    content: "";
+    width: 3px;
+    height: 2px;
+    background: #ff3100;
+    display: block;
+    position: absolute;
+    left: -13px;
+    top: 5px;
+}
+      }
+      @include min-screen($break_point_pc) {
+
+      }
+
+
+
+    }
+
+  }
+
+}
+=======
 /*=========================
 common footer
 ==========================*/
@@ -171,3 +298,4 @@ common footer
 
   }
 }
+>>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300

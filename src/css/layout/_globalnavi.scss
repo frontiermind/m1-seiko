@@ -1,55 +1,76 @@
 /*=========================
 global-navigation
 ==========================*/
+
+.g-nav-block{
+  display: inline-block;
+  vertical-align: middle;
+  width:100%;
+  background-color: rgba(0,0,0,0.76);
+  position: absolute;
+  top:39px;
+  @include min-screen($break_point_pc) {
+    width:auto;
+    background: transparent;
+    position: absolute;
+    top:20px;
+    right: 0px;
+  }
+}
+
 .globalnavi {
    display: none;
   @include min-screen($break_point_pc) {
-   display: block;
+    display: block;
   }
   .gnavi-list {
     margin-top: 0px;
     text-align: center;
+    padding: 20px 0px;
     @include min-screen($break_point_pc) {
-      margin-top: 0;
+      margin-top: -26px;
       @include clearfix;
     }
     > li {
       width: 100%;
-      margin-top: 20px;
       padding-bottom: 20px;
       text-align: center;
       display: inline-block;
+<<<<<<< HEAD
+=======
       border-bottom: solid 1px #ddd;
       background: #ddd;
+>>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300
       @include min-screen($break_point_pc) {
         width: auto;
-        margin: 0 35px 0 0;
         padding-bottom: 0px;
         border-bottom: none;
+        transform: translateX(10px);
+        text-align: left;
+        border-left: solid 1px $white;
+        padding: 5px 20px 5px 20px;
       }
+<<<<<<< HEAD
+
+=======
       //@include max-screen($break_point_980) {
       //  margin: 0 20px 0 0;
     //    padding: 9px 0px;
     //  }
+>>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300
       &.gnavi-list__home {
         @include min-screen($break_point_pc) {
           display: none;
         }
       }
       a {
-        text-align: center;
-        color: $black !important;
+        text-align: left;
+        color: $white !important;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 17px;
         font-weight: bold;
-        span{
-          display: block;
-          font-weight: 500;
-          font-size: 12px;
-          color: $gray !important;
-          font-family: 'Barlow', sans-serif;
-        }
+        position: relative;
       }
     }
   }
@@ -60,113 +81,7 @@ global-navigation
   > li {
     > a {
       position: relative;
-      &:hover {
-        &:after {
-          transform: scaleX(1);
-          opacity: 1 !important;
-        }
-      }
 
-      &:after {
-        position: absolute;
-        bottom: -14px;
-        left: 0;
-        content: "";
-        width: 100%;
-        height: 3px;
-        display: block;
-        background: $blue;
-        transform: scaleX(0);
-        transition: .3s;
-        z-index: 10;
-        @include max-screen($break_point_max) {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-.index {
-  .gnavi-list {
-    > .gnav_index {
-      > a {
-        &:after {
-          @include min-screen($break_point_pc) {
-            transform: scaleX(1);
-          }
-        }
-      }
-    }
-  }
-}
-
-.company {
-  .gnavi-list {
-    > .gnav_company {
-      > a {
-        &:after {
-          @include min-screen($break_point_pc) {
-            transform: scaleX(1);
-          }
-        }
-      }
-    }
-  }
-}
-
-.hydraulic {
-  .gnavi-list {
-    > .gnav_hydraulic {
-      > a {
-        &:after {
-          @include min-screen($break_point_pc) {
-            transform: scaleX(1);
-          }
-        }
-      }
-    }
-  }
-}
-
-.air_pressure {
-  .gnavi-list {
-    > .gnav_air_pressure {
-      > a {
-        &:after {
-          @include min-screen($break_point_pc) {
-            transform: scaleX(1);
-          }
-        }
-      }
-    }
-  }
-}
-
-.flowmeter {
-  .gnavi-list {
-    > .gnav_flowmeter {
-      > a {
-        &:after {
-          @include min-screen($break_point_pc) {
-            transform: scaleX(1);
-          }
-        }
-      }
-    }
-  }
-}
-
-.machine {
-  .gnavi-list {
-    > .gnav_machine {
-      > a {
-        &:after {
-          @include min-screen($break_point_pc) {
-            transform: scaleX(1);
-          }
-        }
-      }
     }
   }
 }

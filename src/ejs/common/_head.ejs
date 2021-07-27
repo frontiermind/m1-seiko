@@ -1,3 +1,83 @@
+<<<<<<< HEAD
+<%
+  var _default = json['default'];
+  for ( var key in _default ) {
+    if ( typeof page[key] === 'undefined' ) {
+      page[key] = _default[key];
+    }
+  }
+-%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="<%= page['keywords'] %>">
+  <meta name="description" content="<%= page['description'] %>">
+  <title><%= page['title'] %></title>
+
+  <link rel="alternate" hreflang="ja" href="<%= page['canonical'] %>">
+  <link rel="canonical" href="<%= page['canonical'] %>">
+
+  <% if (page['bodyclass'] === 'thanks') { %>
+  <meta name="robots" content="noindex,nofollow">
+  <% } else { %>
+
+    <!-- ogp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= page['canonical'] %>">
+    <meta property="og:description" content="<%= page['description'] %>">
+    <meta property="og:image" content="https://www.dias-k.com/images/common/ogimage.png">
+    <meta property="og:title" content="<%= page['title'] %>">
+    <meta property="og:site_name" content="">
+    <!-- /ogp -->
+
+
+  <% } %>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body class="<%= page['bodyclass'] %>">
+  <div class="l-wrapper">
+
+    <header id="header" class="l-header">
+
+      <div class="header-top">
+        <h1 class="header-logo">
+          <a href="/"><img src="/images/common/logo.png" alt="エムワン精工"></a>
+        </h1>
+        <div class="g-nav-block">
+        <nav id="js-menu" class="globalnavi">
+           <ul class="gnavi-list">
+            <li class="gnav_index"><a href="/">ホーム</a></li>
+            <li class="gnav_products"><a href="/products/">製品情報</a></li>
+            <li class="gnav_about"><a href="/about/">会社概要</a></li>
+            <li class="gnav_quote"><a href="/quote/">お見積り</a></li>
+            <li class="gnav_faq"><a href="/faq/">よくある質問</a></li>
+            <li class="gnav_contact">
+<a href="/contact/" class="header-contact btn btn-contact"><i class="fas fa-envelope"></i><span>お問い合わせ</span></a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+
+        <div id="js-menuToggle" class="gnav-btn">
+          <div class="gnav-btn__container">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+
+      </div>
+
+    </header>
+=======
 <%
   var _default = json['default'];
   for ( var key in _default ) {
@@ -135,3 +215,4 @@ $(document).ready(function() {
       </nav><!-- /gnav -->
     </div>
   </header><!-- /header -->
+>>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300

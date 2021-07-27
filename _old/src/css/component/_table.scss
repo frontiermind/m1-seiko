@@ -1,0 +1,149 @@
+.c-table {
+  display: table;
+  width: 100%;
+  border: 1px solid $navy;
+  border-collapse: collapse;
+  color: $white;
+  @include min-screen($break_point_min) {
+    margin-top: 0;
+  }
+	> dl {
+    display: table-row;
+		@include min-screen($break_point_min) {
+      font-size: 15px;
+		}
+
+
+	  > dt {
+      width: 120px;
+			padding: 10px;
+			display: table-cell;
+      vertical-align: middle;
+      border-bottom: 1px solid $navy;
+      font-weight: bold;
+			@include min-screen($break_point_min) {
+				width: 240px;
+        padding: 20px;
+			}
+		}
+		> dd {
+      display: table-cell;
+      padding: 10px;
+      border-bottom: 1px solid $navy;
+      border-left: 1px solid $navy;
+			@include min-screen($break_point_min) {
+        padding: 20px;
+			}
+
+      .c-table-title {
+        font-family: $font__main;
+      }
+
+      .c-table-list {
+        margin-bottom: 25px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        padding-left: 1.5em;
+        > li {
+          margin-bottom: 15px;
+          list-style: disc;
+          @include min-screen($break_point_min) {
+            margin-bottom: 10px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &__nomargin {
+          > li {
+            margin: 0;
+            @include min-screen($break_point_min) {
+              margin: 0;
+            }
+          }
+        }
+      }
+		}
+	}
+}
+
+.c-table--child {
+  width: 100%;
+  display: table;
+
+  dt {
+    display: table-cell;
+    width: 52px;
+    @include min-screen($break_point_min) {
+      width: 62px;
+    }
+  }
+  dd {
+    display: table-cell;
+  }
+}
+
+.table-default {
+	tr {
+		    border-bottom: solid 1px #cbd2e0;
+		th {
+			position: relative;
+			width: 205px;
+			background-color: $lightgray;
+			padding: 0px 15px;
+			vertical-align: middle;
+			font-size: 14px;
+			text-align: left;
+			background-color:#fce8e8;
+			border:none;
+      border-right: solid 1px #cbd2e0;
+      border-left: solid 1px #cbd2e0;
+			@include max-screen($break_point_min) {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+		td {
+			position: relative;
+			border: none;
+			padding: 8px 15px;
+      text-align: left;
+			@include max-screen($break_point_min) {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.form-table{
+  border:none !important;
+  tr{
+    border:none !important;
+    th{
+      border:none !important;
+      background-color: unset;
+      font-size: 15px;
+      width: 235px;
+      vertical-align: top;
+    }
+    td{
+      border:none !important;
+    }
+    input,textarea{
+      border: none !important;
+    }
+  }
+
+  .form-require{
+    background-color: #faa3a3;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+}
