@@ -2574,7 +2574,7 @@ common footer
 ==========================*/
 
 .l-footer {
-  background-color: #000000;
+  background-color: #007eff;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -2796,7 +2796,7 @@ common header
   left: 0px;
   width: 100%;
   z-index: 100;
-  background-color: #000000;
+  background-color: #007eff;
   padding-top: 10px;
   height: 50px;
 }
@@ -3336,7 +3336,7 @@ CONTACT
 }
 
 .p-contact__check:checked + .p-contact__check--parts {
-  color: #3e73ff;
+  color: #007eff;
 }
 
 .p-contact__check:checked + .p-contact__check--parts::after {
@@ -3349,8 +3349,8 @@ CONTACT
   height: 14px;
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
-  border-bottom: 3px solid #3e73ff;
-  border-right: 3px solid #3e73ff;
+  border-bottom: 3px solid #007eff;
+  border-right: 3px solid #007eff;
 }
 
 input::-webkit-input-placeholder {
@@ -3473,7 +3473,6 @@ CONTACT
 }
 
 .home .index-section__lineup .index-lineup {
-  box-shadow: 0px 0px 9px #928f8f;
   margin-bottom: 40px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3484,21 +3483,30 @@ CONTACT
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 
 .home .index-section__lineup .index-lineup > li {
   width: 100%;
   background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 9px #ddd;
+  margin: 15px 0px;
 }
 
 .home .index-section__lineup .index-lineup > li a {
   color: #000000;
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: none;
+  text-align: center;
 }
 
 .home .index-section__lineup .index-lineup > li a img {
-  width: 100%;
+  width: 65%;
+  margin: 30px 0px;
 }
 
 .home .index-section__lineup .index-lineup > li a:hover img {
@@ -3773,7 +3781,7 @@ CONTACT
 }
 
 .u-bc-blue {
-  background-color: #3e73ff !important;
+  background-color: #007eff !important;
 }
 
 .u-bc-white {
@@ -10193,7 +10201,9 @@ ol > li:before {
   }
 
   .home .index-section__lineup .index-lineup > li {
-    width: 20%;
+    width: calc(33% - 30px);
+    height: 355px;
+    margin: 15px;
     border-right: solid 1px #f5f5f5;
   }
 
