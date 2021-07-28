@@ -4,10 +4,11 @@
   height: 50px;
   text-align: center;
   vertical-align: middle;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: $white;
+  //position: fixed;
+  top: 20px;
+  right: 20px;
+  //background-color: $white;
+  z-index: 100;
   cursor: pointer;
   @include min-screen($break_point_pc) {
     display: none;
@@ -44,7 +45,7 @@
     height: 2px;
     left: 8px;
     display: block;
-    background-color: $brown;
+    background-color: $white;
     transition: all .4s;
     border-radius: 10px;
   }

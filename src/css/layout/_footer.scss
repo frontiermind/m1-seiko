@@ -123,3 +123,72 @@ common footer
   }
 
 }
+
+
+footer#footer{
+  background:#3B79B2;
+  .footer_inner{
+    position: relative;
+    padding: 95px 15px 40px 15px;
+    .footer-nav{
+      ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 45px;
+        @include min-screen($break_point_pc) {
+          justify-content: flex-end;
+        position: absolute;
+        bottom: 40px;
+        right: 15px;
+        margin-top: 0;
+      }
+
+        li{
+          width: 50%;
+          text-align: center;
+          @include max-screen($break_point_pc) {
+          margin-bottom: 14px;
+          letter-spacing: 0;
+        }
+          @include min-screen($break_point_pc) {
+            width: auto;
+            padding: 0 15px;
+            border-right: 1px solid #fff;
+          }
+          &:last-child{
+            border:none;
+            padding-right: 0;
+          }
+          a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .footer-copy {
+    background-color: #EDEDED;
+    text-align: center;
+    @include min-screen($break_point_pc) {
+    text-align: right;
+  }
+    padding: 10px 15px;
+    p{
+      font-weight: bold;
+      font-size: 10px;
+      letter-spacing: 0;
+    }
+    small {
+      font-size: 12px;
+      font-weight: bold;
+      font-weight: 500;
+      color: $black;
+      @include min-screen($break_point_pc) {
+        font-size: 13px;
+      }
+    }
+  }
+}

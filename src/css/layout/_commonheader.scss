@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*=========================
 common lower page header
 ==========================*/
@@ -43,7 +42,7 @@ common lower page header
       font-size:40px;
       letter-spacing: 2px;
       display: block;
-      font-family: $webfont;
+      //font-family: $webfont;
       @include max-screen($break_point_pc) {
         font-size: 27px;
       }
@@ -261,7 +260,6 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-=======
 /*=========================
 common lower page header
 ==========================*/
@@ -272,6 +270,7 @@ common lower page header
 
 header#header{
   background: rgba(59,121,178,0.85);
+
   position: fixed;
   width: 100%;
   .inner{
@@ -287,4 +286,3 @@ header#header{
     }
   }
 }
->>>>>>> 2c665a48f2908cebd5e258cb837d7b6e90944300

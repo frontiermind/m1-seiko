@@ -30,7 +30,7 @@ $( function() {
       controls: false,
       pager: false,
       usecss:false,
-      pause: 4000,
+      pause: 3000,
       essing: 'linear',
       speed: 1000,
     });

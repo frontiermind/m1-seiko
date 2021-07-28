@@ -1,9 +1,9 @@
 .l-wrapper {
-  overflow: hidden;
+  //overflow: hidden;
   margin: 0 auto;
 
   @include min-screen($break_point_min) {
-
+min-width: 1400px;
   }
 }
 

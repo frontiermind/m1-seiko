@@ -8,7 +8,7 @@
   font-size: 20px;
   text-align: center;
   color: $black;
-  font-family: "ヒラギノ角ゴ Pro W6";
+  //font-family: "ヒラギノ角ゴ Pro W6";
   @include min-screen($break_point_min) {
     padding-bottom: 15px;
     margin-bottom: 30px;
