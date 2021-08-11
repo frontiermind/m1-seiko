@@ -1,50 +1,134 @@
 /*=========================
 CONTACT
 ==========================*/
-.contact .block--contents--table dt{
-  @include min-screen($break_point_min) {
-    width: 195px;
-  }
-}
 .contact{
-  .page-block--contents{
-    padding-bottom: 60px;
+
+  &_header{
+    //margin-bottom: 40px;
+    @include min-screen($break_point_pc) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &-description{
+      font-size: 15px;
+      font-weight: 500;
+      @include min-screen($break_point_pc) {
+      width: 60%;
+      }
+    }
+    &_pdf{
+      background-color: $lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin-top: 20px;
+      @include min-screen($break_point_pc) {
+        width: 35%;
+        margin-top: 0px;
+      }
+      .btn{
+        height: 40px;
+      }
+    }
+    h2{
+      ///width: 100%;
+      font-size: 34px;
+      padding: 12px 38px;
+      margin-left: 16px;
+      margin-bottom: 40px;
+      border-left: 8px solid $red;
+      position: relative;
+      transform: skewX(-20deg);
+      @include max-screen($break_point_pc) {
+      line-height: 1.3;
+      font-size: 28px;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      left: 0;
+      display: block;
+      height: 100%;
+      width: 8px;
+      background: #F2F2F2;
+      top:0;
+    }
+    span{
+      display: block;
+      transform: skewX(20deg);
+    }
+    }
   }
 
-.pege-first_txt{
-  h3{
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 35px;
-  }
-  p{
-    font-size:15px;
-    text-align: left;
-    font-weight: lighter;
-  }
+
 }
 
-  .block--contents--table{
-    background-color: #f9f9f9;
-  }
+.contact .block--contents--table{
+  dl{
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid $gray;
 
-  .btn-submit{
-    background: #ff3100;
-    padding:15px 0;
-    width:60%;
-    max-width: 340px;
-    color: #FFF!important;
-    font-size:20px;
-    letter-spacing: 3px;
-    border:none;
-
-    &:hover{
-      opacity: 0.6;
+    @include min-screen($break_point_min) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
 
+    &:last-of-type{
+      border-bottom: none;
+    }
   }
-
+  dt{
+    margin-bottom: 5px;
+  @include min-screen($break_point_min) {
+    width: 30%;
+    margin-bottom: 0;
+  }
 }
+dd{
+  @include min-screen($break_point_min) {
+    width: 70%;
+  }
+  input,textarea{
+    font-size: 16px;
+    padding: 5px;
+  }
+  textarea{
+    height: 280px;
+  }
+  p.attention{
+    font-size: 10px;
+    font-weight: normal;
+  }
+}
+}
+
+.submitbtn{
+  width: 220px;
+  border:1px solid $red;
+  padding: 5px 0;
+  margin: 0 auto;
+  color: $red;
+  border-radius: 5px;
+  input{
+    background: transparent;
+    color: $red!important;
+  }
+  &:hover{
+    background: $red;
+    input{
+      color: $white!important;
+    }
+  }
+}
+
 
 .p-contact__privacy {
 
@@ -136,7 +220,7 @@ CONTACT
   }
 
   input.full-width, textarea {
-      width: 525px;
+      width: 100%;
     }
   }
 }

@@ -102,14 +102,17 @@
       @include min-screen($break_point_pc) {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
       &-description{
+        font-size: 15px;
+        font-weight: 500;
         @include min-screen($break_point_pc) {
         width: 60%;
         }
       }
       &_pdf{
-        background-color: $lightgray;
+        background-color: #fafafa;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -123,27 +126,72 @@
           height: 40px;
         }
       }
+      h2{
+        width: 100%;
+        font-size: 34px;
+        padding: 9px 38px;
+        margin-left: 16px;
+        margin-bottom: 40px;
+        border-left: 8px solid $red;
+        position: relative;
+        transform: skewX(-20deg);
+        @include max-screen($break_point_pc) {
+        line-height: 1.3;
+        font-size: 28px;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 8px;
+        background: #F2F2F2;
+        top:0;
+      }
+      span{
+        display: block;
+        transform: skewX(20deg);
+      }
+      }
     }
     &_content {
       h3 {
-        font-size: 20px;
-        border-bottom: solid 3px $gray;
+        font-size: 21px;
+        //border-bottom: solid 3px $gray;
         position: relative;
         margin: 40px 0px 30px 0px;
         padding: 10px 0px;
         font-weight: bold;
+        @include min-screen($break_point_pc) {
+          font-size: 25px;
+        }
         &:after {
           position: absolute;
           content: " ";
           display: block;
-          border-bottom: solid 3px $red;
+          border-bottom: solid 5px $red;
           bottom: -3px;
-          width: 20%;
+          width: 135px;
+          z-index: 2;
+          transform: skewX(-40deg);
+        }
+        &:before{
+          position: absolute;
+          content: " ";
+          display: block;
+          border-bottom: solid 5px $gray;
+          bottom: -3px;
+          width: 100%;
+          z-index: 1;
+          transform: skewX(-40deg);
         }
       }
 
       p {
         margin: 10px 0;
+        font-size: 15px;
+        font-weight: 500;
       }
       &_col{
         @include min-screen($break_point_pc) {
@@ -153,13 +201,108 @@
           //float: left;
           @include min-screen($break_point_pc) {
           align-self: flex-start;
-          margin: 0px 15px 15px 15px;
+          //margin: 0px 15px 15px 15px;
+          margin-right: 35px;
+          margin-bottom: 35px;
           }
         }
         p{
           //float: right;
           @include min-screen($break_point_pc) {
             margin-top: 0px;
+          }
+          span.small{
+            font-weight: normal;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+
+    .caption{
+      font-weight: normal;
+      font-size: 12px;
+      margin-bottom: 25px;
+      @include min-screen($break_point_pc) {
+      margin-top: -32px;
+    }
+    }
+
+    table.comparison{
+      table-layout: auto;
+      margin-top: 20px;
+      tr{
+        @include max-screen($break_point_pc) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        th{
+          border:1px solid #E8E8E8;
+          padding: 10px 0;
+          background: #F4F7FB;
+          font-weight: bold;
+          @include max-screen($break_point_pc) {
+            display: inline-block;
+            width: 50%;
+          }
+          &:first-child{
+              border:none;
+              background: transparent;
+              @include max-screen($break_point_pc) {
+                display: none;
+              }
+          }
+        }
+        td{
+          border:1px solid #E8E8E8;
+          padding: 10px 15px;
+          text-align: left;
+          @include min-screen($break_point_pc) {
+          width: 40%;
+          }
+          @include max-screen($break_point_pc) {
+            display: inline-block;
+            width: 50%;
+          }
+          &:first-child{
+              width: 20%;
+              font-weight: bold;
+              @include max-screen($break_point_pc) {
+                display: block;
+                width: 100%;
+                //background: #F4F7FB;
+                text-align: center;
+              }
+          }
+        }
+
+      }
+    }
+  }
+
+  &.jigs{
+    .products-single_content_col{
+      margin-bottom: 20px;
+    }
+  }
+  &.centerless_grinding{
+    table.comparison{
+      tr{
+        td{
+          &:first-child{
+              @include max-screen($break_point_pc) {
+                width: 50%;
+                text-align: left;
+              }
+          }
+        }
+        th{
+          &:first-child{
+                border: 1px solid #E8E8E8;
+              background: #F4F7FB;
+              @include max-screen($break_point_pc) {
+                display: block;
+              }
           }
         }
       }

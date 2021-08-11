@@ -7,70 +7,82 @@
   overflow: hidden;
   position: relative;
   line-height: 0;
+  height: 900px;
   @include max-screen($break_point_pc) {
     //height: 300px;
+    max-height: auto;
+    height: auto;
   }
 
   .bx-wrapper{
     position: relative;
     z-index: 5;
-    @include min-screen($break_point_pc) {
     margin-bottom: -375px;
     height: auto;
+    @include max-screen($break_point_pc) {
+    margin-bottom: 0;
   }
   }
 
   .main-copy{
     position: absolute;
-    bottom: 20%;
-    left: 10px;
-    @include min-screen($break_point_pc) {
     padding: 55px 80px;
     box-sizing: border-box;
     height: 375px;
     bottom: 0;
     left: auto;
+    @include max-screen($break_point_pc) {
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    bottom: 20%;
+    left: 10px;
   }
   @include max-screen($break_point_pc) {
-    padding: 10px 0;
+    padding: 25px 20px 400px 20px;
     background: rgba(255,255,255,0.7);
-    transform: skewX(-20deg);
-    padding-right: 30px;
-    padding-left: 50px;
+    transform: skewY(5deg);
     margin-left: -50px;
-    border-right: 20px solid rgba(255,0,0,0.7);
+    border-top: 10px solid rgba(255,0,0,0.7);
     background-clip: padding-box;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: -400px;
   }
 
     z-index: 21;
     h2{
-      font-size: 20px;
-      line-height: 1.7;
-      color:#FF0000;
-      font-weight:600;
-      @include min-screen($break_point_pc) {
+
+//      @include min-screen($break_point_pc) {
       font-size: 32px;
       line-height: 64px;
       color:#FF0000;
       font-weight:600;
       letter-spacing: 2px;
-    }
+  //  }
     @include max-screen($break_point_pc) {
-      transform: skewX(20deg);
+      transform: skewY(-5deg);
+      font-size: 4.6vmin;
+      line-height: 1.7;
+      color:#FF0000;
+      font-weight:600;
     }
     }
   }
   .main-copy_bg{
-    background: #fff;
-    opacity: 0.75;
-    display: none;
-    @include min-screen($break_point_pc) {
-    position: relative;
+    position: absolute;
     display: inline-block;
     bottom: 0;
     z-index: 20;
     height: 375px;
     width: 700px;
+    background: #fff;
+    opacity: 0.75;
+
+    @include max-screen($break_point_pc) {
+    display: none;
   }
     &::after{
       content:"";
@@ -214,9 +226,11 @@
         h2{
           text-align: center;
           background: #FFF;
-          padding:15px 20px;
+          padding:15px 20px 30px 20px;
           position: relative;
           z-index: 2;
+          background:#FFF url(/images/common/bg_operation_sp.png) bottom no-repeat;
+          background-size: contain;
           @include min-screen($break_point_pc) {
           width: 25%;
           display: flex;
@@ -229,7 +243,7 @@
         }
         &::after{
           @include max-screen($break_point_pc) {
-            content:"";
+            //content:"";
             width: 15px;
             height: 15px;
             transform: rotate(45deg);
@@ -249,12 +263,15 @@
             line-height: 1;
             position: relative;
             color: #FF0000;
+            display: inline-block;
+            padding-right: 20px;
             @include min-screen($break_point_pc) {
             padding-right: 20px;
+            display: block;
           }
             z-index: 2;
             &::before{
-              @include min-screen($break_point_pc) {
+              //@include min-screen($break_point_pc) {
               content: "";
               display: block;
               height: 1px;
@@ -263,10 +280,10 @@
               left: 0;
               position: absolute;
               background: #FF0000;
-            }
+            //}
             }
             &::after{
-              @include min-screen($break_point_pc) {
+              //@include min-screen($break_point_pc) {
               content:"";
               width: 0;
               height: 0;
@@ -278,7 +295,10 @@
               bottom: 0;
               right: 0px;
               margin: auto;
-            }
+              @include max-screen($break_point_pc) {
+                //right: -15px;
+              }
+            //}
             }
           }
         }
@@ -287,14 +307,15 @@
           display: flex;
           justify-content: flex-end;
           flex-wrap: wrap;
-          padding: 20px;
+          padding: 10px 10px 20px 10px;
           padding-top: 0;
           @include min-screen($break_point_pc) {
-            padding: 20px 0;
+            padding: 30px 0;
           }
           >li{
-            width: 50%;
+            width: 25%;
             margin-top: 30px;
+            padding: 0 5px;
             @include min-screen($break_point_pc) {
               margin-top: 0;
             width: 25%;
@@ -306,32 +327,44 @@
 
             &:nth-child(odd){
               @include max-screen($break_point_pc) {
-              padding-right: 10px;
+              //padding-right: 10px;
             }
             }
             &:nth-child(even){
               @include max-screen($break_point_pc) {
-              padding-left: 10px;
+              //padding-left: 10px;
             }
             }
             h3{
-              font-size: 18px;
+              font-size: 15px;
               margin-bottom: 14px;
+              @include min-screen($break_point_pc) {
+                font-size: 18px;
+              }
             }
             p.operation_percent{
-              font-size: 18px;
+              font-size: 15px;
               font-weight: bold;
-              margin-top: -5px;
-              margin-bottom: 5px;
+              //margin-top: -5px;
+              margin-bottom: 10px;
+              @include min-screen($break_point_pc) {
+                font-size: 18px;
+                margin-bottom: 5px;
+                margin-top: -5px;
+              }
             }
             p.possible{
               display: inline-block;
               color: #333;
               background: #00E4FF;
-              font-size: 15px;
+              font-size: 10px;
               font-weight: bold;
-              padding: 5px 15px;
+              padding: 5px 10px;
               border-radius: 15px;
+              @include min-screen($break_point_pc) {
+                font-size: 15px;
+                padding: 5px 15px;
+              }
             }
           }
         }

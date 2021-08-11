@@ -1,0 +1,231 @@
+.recruit{
+  &.l-page{
+    .l-wrapper{
+      background: url(/images/recruit/bg_recruit.png) center repeat-y;
+      background-size: contain;
+    }
+    .mainvisual{
+      @include min-screen($break_point_pc) {
+      background: url(/images/recruit/header.jpg);
+    }
+      background: url(/images/recruit/header_sp.jpg);
+      background-size: cover;
+    }
+  }
+
+
+  .sec-content{
+    @include max-screen($break_point_pc) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: $red;
+    position: relative;
+    padding-bottom: 30px;
+    line-height: 1;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 1.4;
+    @include min-screen($break_point_pc) {
+      font-size: 32px;
+    }
+
+    &::after{
+      content: "";
+      width: 92px;
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 5px;
+      background: $red;
+      transform: skewX(-40deg);
+    }
+  }
+
+  .sec-recruit_intro{
+text-align: center;
+&.sec-content{
+  padding-left: 0;
+  padding-right: 0;
+}
+    &-description{
+      width: 100%;
+      margin-bottom: 90px;
+      padding-left: 20px;
+      padding-right: 20px;
+      @include min-screen($break_point_pc) {
+        width: 845px;
+        display: inline-block;
+        padding: 0;
+      }
+
+        p{
+          text-align: left;
+          font-size: 16px;
+          line-height: 31px;
+        }
+    }
+
+    img{
+      width:100%;
+    }
+
+  }
+
+  .sec-recruit_message{
+    ul{
+      >li{
+        width: 100%;
+        @include min-screen($break_point_pc) {
+        width: 1400px;
+        margin: 0 auto 210px auto;
+      }
+      h2{
+        margin-bottom: 80px;
+      }
+        margin: 0 auto 80px auto;
+        .sec-recruit_message-block{
+          @include min-screen($break_point_pc) {
+          display: flex;
+          justify-content: center;
+        }
+          //flex-wrap: wrap;
+          font-size: 16px;
+          line-height: 30px;
+          >div{
+            @include min-screen($break_point_pc) {
+            width: 50%;
+            display: flex;
+          }
+            img{
+              width: 100%;
+              height: auto;
+              margin-bottom: 20px;
+              @include min-screen($break_point_pc) {
+                margin-bottom: 0;
+              }
+            }
+          }
+          &_description{
+            @include min-screen($break_point_pc) {
+            width: 50%;
+            padding: 0 125px 0 48px;
+          }
+          }
+        }
+        &:nth-child(even){
+          .sec-recruit_message-block{
+            &_image{
+              order: 2;
+            }
+            &_description{
+              order: 1;
+              @include min-screen($break_point_pc) {
+              padding: 0 48px 0 100px;
+            }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sec-recruit_overview{
+    background:#FAFAFA url(/images/recruit/bg_overview.png) center no-repeat;
+    background-size: cover;
+  }
+
+  .sec-recruit_company{
+    background:#FFF url(/images/recruit/bg_overview.png) center no-repeat;
+    background-size: cover;
+  }
+
+  .sec-recruit_overview,.sec-recruit_company{
+    table{
+      @include min-screen($break_point_pc) {
+      width: 960px;
+    }
+    width: 100%;
+      margin: 0 auto;
+      tr{
+        font-size: 17px;
+        th{
+          background: #F4F7FB;
+          border:1px solid #E8E8E8;
+          width: 150px;
+          font-weight: bold;
+          padding: 11px 0;
+          vertical-align: top;
+          @include max-screen($break_point_pc) {
+            display: block;
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding-left: 25px;
+          }
+        }
+        td{
+          background: #fff;
+          border:1px solid #E8E8E8;
+          text-align: left;
+          padding: 11px 25px;
+          @include max-screen($break_point_pc) {
+            display: block;
+            border: none;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .sec-recruit_contact{
+    background: #FAFAFA;
+    //background: #ddd;
+    text-align: center;
+    padding: 50px 0;
+    @include min-screen($break_point_pc) {
+    padding: 90px 0 80px 0;
+  }
+    .contact-btn{
+      background:#ED1C24;
+      display: inline-block;
+      width: 100%;
+      padding: 15px 0;
+      @include min-screen($break_point_pc) {
+      width: 446px;
+      padding: 22px 0;
+    }
+      a{
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        @include min-screen($break_point_pc) {
+        font-size: 24px;
+      }
+      }
+    }
+  }
+
+  .sec-recruit_photo.sec-content{
+    padding: 50px 0;
+    @include min-screen($break_point_pc) {
+    padding: 130px 0;
+  }
+    background: $white;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}

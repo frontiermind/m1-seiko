@@ -1,0 +1,100 @@
+.sec-contact{
+  background: url(/images/common/bg_contact.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 80px;
+  @include min-screen($break_point_pc) {
+  padding:45px 50px 25px;
+  margin-bottom: 160px;
+}
+  &_inner{
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    @include min-screen($break_point_pc) {
+      border-radius: 25px;
+    padding: 33px 40px;
+    padding-top: 15px;
+  }
+
+    h2{
+      font-size: 25px;
+      color: $red;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        height: 5px;
+        background: $red;
+        width: 175px;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: skewX(-40deg);
+      }
+    }
+    &_info{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &_block{
+        background: $white;
+        width: 320px;
+        padding: 12px 0;
+        margin-bottom: 15px;
+        @include min-screen($break_point_pc) {
+          margin-bottom: 0;
+        }
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+        h3{
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+        a{
+          font-size: 28px;
+          font-family: 'Montserrat', sans-serif;
+          @include min-screen($break_point_pc) {
+          font-size:33px;
+        }
+          color: $red;
+          text-decoration: none;
+          //font-weight: 900;
+          i{
+            font-size: 18px;
+            @include min-screen($break_point_pc) {
+            font-size: 23px;
+          }
+            line-height: 1;
+            display: table-caption;
+            padding-right: 7px;
+          }
+        }
+        .contact-btn{
+          width: 216px;
+          display: inline-block;
+          background: $red;
+          a{
+            color: #FFF;
+            font-size: 14px;
+            display: block;
+            text-align: center;
+            padding: 12px;
+            i{
+              display: inline;
+              font-size:14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

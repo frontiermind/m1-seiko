@@ -29,7 +29,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
 </head>
 <body class="products l-page">
@@ -44,21 +47,12 @@
         <div class="g-nav-block">
         <nav id="js-menu" class="globalnavi">
            <ul class="gnavi-list">
-             <li><a class="nav-home" href="#"><p>ホーム</p></a></li>
-             <li>
-               <a class="nav-products" href="#"><p>製品情報</p></a>
-             </li>
-             <li><a class="nav-estimate" href="#"><p>お見積り</p></a></li>
-             <li><a class="nav-contact" href="#"><p>会社概要</p></a></li>
-             <li><a class="nav-faq" href="#"><p><i class="fas fa-envelope"></i>お問い合わせ</p></a></li>
-            <!--<li class="gnav_index"><a href="/">ホーム</a></li>
-            <li class="gnav_products"><a href="/products/">製品情報</a></li>
-            <li class="gnav_about"><a href="/about/">会社概要</a></li>
-            <li class="gnav_quote"><a href="/quote/">お見積り</a></li>
-            <li class="gnav_faq"><a href="/faq/">よくある質問</a></li>
-            <li class="gnav_contact">
-<a href="/contact/" class="header-contact btn btn-contact"><i class="fas fa-envelope"></i><span>お問い合わせ</span></a>
-            </li>-->
+             <li> <a class="nav-top" href="/"><p>TOP</p></a></li>
+             <li> <a class="nav-products" href="/products/"><p>製品情報</p></a></li>
+             <li><a class="nav-overview" href="/company_info/"><p>会社概要</p></a></li>
+             <li><a class="nav-contact" href="#"><p>エムワンのものづくり</p></a></li>
+             <li><a class="nav-estimate" href="/recruit/"><p>採用情報</p></a></li>
+             <li><a class="nav-faq" href="/contact/"><p><i class="fas fa-envelope"></i>お問い合わせ</p></a></li>
           </ul>
         </nav>
         </div>
@@ -99,21 +93,41 @@
     <div class="l-sidebar">
   <p class="l-sidebar_sp_open"><i class="fa fa-list-ul"></i>ページメニュー</p>
   <div class="l-sidebar_inner">
-  <h3>製品案内</h3>
+  <h3>PRODUCTS MENU<span>製品メニュー</span></h3>
   <ul class="side_lineup">
-    <li><a href="#">円筒研磨</a></li>
-    <li><a href="#">内径研磨</a></li>
-    <li><a href="#">テーパー加工</a></li>
+    <li><a href="#">円筒研削(円筒研磨)</a></li>
+    <li><a href="#">テーパ加工</a></li>
     <li><a href="#">センターレス研磨</a></li>
-    <li><a href="#">ネジ研磨</a></li>
+    <li><a href="#">ネジ研削/研磨<br>(雌ネジ合わせ/ラッピング)</a></li>
     <li><a href="#">雌ネジ加工</a></li>
-    <li><a href="#">精密微小ネジ</a></li>
-    <li><a href="#">治具/ゲージ</a></li>
-    <li><a href="#">設計/開発</a></li>
+    <li><a href="#">テーパー合わせ加工</a></li>
+    <li><a href="#">ゲージ/測定治具</a></li>
+  </ul>
+
+  <div class="side_operation">
+    <a href="#">
+      <h3>稼働状況</h3>
+      <img src="/images/common/operation_50.png" alt="50%">
+      <p class="operation_percent">50%</p>
+      <p>各加工の稼働状況をご案内します。</p>
+    </a>
+  </div>
+
+  <h3>COMPANY<span>会社概要</span></h3>
+  <ul class="side_lineup">
+    <li><a href="#">品質/ISO</a></li>
+    <li><a href="#">KMN</a></li>
+    <li><a href="#">採用情報</a></li>
+    <li><a href="#">アクセス</a></li>
+  </ul>
+
+  <ul class="l-sidebar_infobox_bnr">
+    <li><a href="#"><img src="/images/common/iso_banner.png" alt="ISO認証 afaQ UKAS"></a></li>
+    <li><a href="#"><img src="/images/common/blog_banner.png" alt="職人切磋琢磨ブログ"></a></li>
   </ul>
 
 
-  <div class="l-sidebar_infobox">
+  <!--<div class="l-sidebar_infobox">
     <div class="l-sidebar_infobox_inner">
 <img src="../images/common/contact_img.png" alt="製品情報">
     <h2 class="sec__title"><span><i class="fa fa-phone"></i>お問合せ</span></h2>
@@ -128,7 +142,7 @@
     <ul class="l-sidebar_infobox_bnr">
       <li><a href="#"><img src="../images/top/iso_logo.gif" alt="ISO認証 afaQ UKAS"></a></li>
     </ul>
-  </div>
+  </div>-->
   </div>
 </div>
 
@@ -523,13 +537,12 @@ Copyright(C)2003-2010 M1 Seiko Co., Ltd. All Rights Reserved.</p>
 
   <div class="footer-nav">
      <ul>
-      <li><a href="#">ホーム</a></li>
-      <li><a href="#">製品情報</a></li>
-      <li><a href="#">会社概要</a></li>
-      <li><a href="#">お見積り</a></li>
-      <li><a href="#">お問合せ</a></li>
-      <li><a href="#">プライバシーポリシー</a></li>
-      <li><a href="#">サイトマップ</a></li>
+       <li> <a href="/products/">製品情報</a></li>
+       <li><a href="/company_info/">会社概要</a></li>
+       <li><a href="#"><p>エムワンのものづくり</a></li>
+       <li><a href="/recruit/">採用情報</a></li>
+       <li><a href="/contact/">お問い合わせ</a></li>
+       <li><a href="/contact/">リンク</a></li>
     </ul>
   </div>
 </div><!--/ inner -->
