@@ -389,11 +389,21 @@
         width: 500px;
         margin-bottom: 60px;
       }
+
         a{
           position: relative;
           display: block;
+          &:hover{
+            opacity: 1;
+          }
+          &:hover img{
+            //opacity: 0.8;
+              transform: scale(1.2);
+              transition: 0.4s;
+          }
           img{
             width: 100%;
+            transition: 0.4s;
           }
           h2{
             position: absolute;

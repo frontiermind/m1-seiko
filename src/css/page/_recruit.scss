@@ -120,6 +120,18 @@ text-align: center;
             padding: 0 125px 0 48px;
           }
           }
+
+          &.small-photo{
+            .sec-recruit_message-block_image{
+              text-align:center;
+              align-items:center;
+              justify-content: center;
+              img{
+                max-width:400px;
+                display:block;
+              }
+            }
+          }
         }
         &:nth-child(even){
           .sec-recruit_message-block{

@@ -1,4 +1,4 @@
-.company,.iso,.kmn,.access_map{
+.company,.iso,.kmn,.access_map,.links{
 
   &-info{
     &_header{
@@ -274,6 +274,33 @@ left: -7px;
       width: 100%;
       @include max-screen($break_point_pc) {
         height:250px;
+      }
+    }
+  }
+}
+
+//links
+
+.links{
+  table.link{
+    tr{
+      td{
+        &.banner{
+        width: 35%;
+        @include max-screen($break_point_pc) {
+          width: 100%;
+          margin-bottom: 0;
+          padding: 15px 10px;
+        }
+      }
+      &.text{
+        word-break: break-all;
+      @include max-screen($break_point_pc) {
+        width: 100%;
+        background: #F7F7F7;
+      }
+    }
+
       }
     }
   }
