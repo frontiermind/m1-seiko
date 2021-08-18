@@ -1,0 +1,23 @@
+<section class="sec-contact">
+
+  <div class="sec-contact_inner">
+
+    <h2>お問い合わせ</h2>
+
+    <div class="sec-contact_inner_info">
+      <div class="sec-contact_inner_info_block">
+        <h3>お電話でのお問い合わせ</h3>
+        <a href="#"><i class="fas fa-phone"></i>03-3733-1690</a>
+      </div>
+
+      <div class="sec-contact_inner_info_block">
+        <h3>フォームでのお問い合わせ</h3>
+        <div class="contact-btn">
+          <a href="#"><i class="fas fa-envelope"></i>お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
