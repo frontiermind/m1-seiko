@@ -1,0 +1,145 @@
+/* ====================
+ craftsmanship
+=======================*/
+.craftsmanship{
+
+  .mainvisual {
+    background: url(/images/header/header_craftsmanship.jpg);
+    background-size: cover;
+    @include max-screen($break_point_pc) {
+    background: url(/images/header/header_craftsmanship_sp.jpg);
+    }
+  }
+
+  .l-main {
+
+
+    .sec-content__inner {
+      .pdlist {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-img{
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          //height: 150px;
+          @include max-screen($break_point_pc) {
+            //height: 16vw;
+          }
+          img{
+            transition: 0.4s;
+          }
+        }
+        li{
+          width: calc(50% - 15px);
+          margin-bottom: 30px;
+          border-radius: 15px;
+          overflow: hidden;
+          background-color: #efefef;
+          position: relative;
+          transition: 0.4s;
+          @include max-screen($break_point_pc) {
+            //margin-bottom: 10px;
+            //width: calc(100% - 7px);
+            width: 100%;
+          }
+          &:hover .pdlist-img{
+            height: 190px;
+            img{
+            //opacity: 0.8;
+              transform: scale(1.2);
+              transition: 0.4s;
+          }
+        }
+
+          a{
+            text-decoration: none;
+            &:hover{
+              opacity: 1;
+            }
+          }
+
+        .pdlist-inner {
+          position: relative;
+          bottom: 0;
+          text-align: left;
+          background-color: $white;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 20px;
+          @include max-screen($break_point_pc) {
+            min-height: auto;
+          }
+          h3 {
+            text-align: left;
+            margin-top: 0;
+            font-size: 22px;
+            line-height: 1;
+            margin-bottom: 15px;
+
+            @include max-screen($break_point_pc) {
+              //font-size: 13px;
+            }
+
+            span{
+              position: relative;
+              line-height: 1;
+              display: inline-block;
+              margin-right: 35px;
+              padding-right: 15px;
+              padding-bottom: 3px;
+              color: $red;
+              &:after{
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 5px 0 5px 7px;
+                border-color: transparent transparent transparent #FF0000;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -10px;
+                margin: auto;
+              }
+            }
+          }
+          p{
+            font-size: 15px;
+            text-decoration: none;
+          }
+
+          .btn {
+            margin-top: 10px;
+              @include max-screen($break_point_pc) {
+                width: 100px;
+              }
+          }
+
+
+
+        }
+       }
+
+        .pdlist_2pix {
+          @include clearfix;
+          padding: 15px 0;
+
+          img {
+            width: 48%;
+            margin: 1%;
+            float: left;
+          }
+        }
+      }
+
+      &-description {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}

@@ -75,6 +75,26 @@
     &.blog-menu-list{
       a{
         color: #333333;
+        text-decoration: underline;
+
+        span.new{
+          &::after{
+            content:"NEW";
+            font-weight: bold;
+            background: $red;
+            font-size: 11px;
+            color: $white;
+            padding:0 9px 2px 9px;
+            border-radius: 30px;
+            position: absolute;
+            display: inline-block;
+            height: 20px;
+            top:0;
+            bottom:0;
+            margin: auto;
+            margin-left: 12px;
+          }
+        }
       }
     }
   }
