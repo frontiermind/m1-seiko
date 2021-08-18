@@ -46,11 +46,12 @@
 
       &_block{
         background: $white;
-        width: 320px;
+        width: 100%;
         padding: 12px 0;
         margin-bottom: 15px;
         @include min-screen($break_point_pc) {
           margin-bottom: 0;
+          width: 320px;
         }
         &:last-of-type{
           margin-bottom: 0;
@@ -88,6 +89,7 @@
             display: block;
             text-align: center;
             padding: 12px;
+            font-weight: bold;
             i{
               display: inline;
               font-size:14px;

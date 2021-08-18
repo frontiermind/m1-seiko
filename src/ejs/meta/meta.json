@@ -103,6 +103,14 @@
     "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
   },
 
+  "craftsmanship": {
+    "bodyclass": "l-page craftsmanship",
+    "title": "M1のものづくり - 大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
+    "description": "大田区（蒲田）にて研削/切削/研磨/旋盤等の精密部品加工を行う。自動車・工作機械・半導体・航空・学術研究分野用に小ロットの試作から量産まで対応。設計開発段階から幅広く提案。",
+    "canonical": "https://m1-seiko.co.jp/products/craftsmanship",
+    "keywords": "精密,高精度,研削,ネジ研磨,旋盤,フライス,内径,外径,試作品,小ロット"
+  },
+
   "company_info": {
     "bodyclass": "company_info l-page",
     "title": "会社案内 - 大田区（蒲田）の研削/切削/研磨加工：エムワン精工",
