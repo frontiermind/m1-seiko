@@ -6627,6 +6627,11 @@ CONTACT
     width: 120px;
   }
 
+  footer#footer {
+    min-width: 1400px;
+    width: 100%;
+  }
+
   footer#footer .footer_inner .footer-nav ul {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;

@@ -127,6 +127,10 @@ common footer
 
 footer#footer{
   background:#3B79B2;
+  @include min-screen($break_point_pc) {
+  min-width: 1400px;
+  width: 100%;
+}
   .footer_inner{
     position: relative;
     padding: 95px 15px 40px 15px;
