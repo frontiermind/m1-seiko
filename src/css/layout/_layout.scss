@@ -319,3 +319,10 @@ sub__content
     }
   }
 }
+
+.alignleft{
+  @include min-screen($break_point_pc) {
+    float: left;
+    margin-right: 20px;
+  }
+}

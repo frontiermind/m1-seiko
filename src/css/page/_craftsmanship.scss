@@ -141,5 +141,17 @@
       }
     }
   }
+  .products-single_header{
+    h2{
+      margin-bottom: 0px;
+      p{
+        transform: skewX(20deg);
+        padding-left: 17px;
+        margin: 0px;
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+  }
 
 }
