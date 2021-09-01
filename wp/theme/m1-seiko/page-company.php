@@ -12,7 +12,7 @@ get_header(); ?>
     <div class="l-container">
       <div class="mainvisual-inner">
       <h2>
-        COMPANY
+        <?php the_title(); ?>
         <span>
           会社案内
         </span>
@@ -36,7 +36,7 @@ get_header(); ?>
       <?php endwhile; ?>
     <?php endif; ?>
 
-      
+
       </section>
       </div>
 

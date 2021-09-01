@@ -13,6 +13,7 @@
 
   <h3>COMPANY<span>会社概要</span></h3>
   <ul class="side_lineup">
+    <li><a href="<?php echo home_url(); ?>/company_info/">会社概要</a></li>
     <li><a href="<?php echo home_url(); ?>/iso9001_quality/">品質/ISO</a></li>
     <li><a href="<?php echo home_url(); ?>/kamata_meisters_network/">KMN</a></li>
     <li><a href="<?php echo home_url(); ?>/access_map/">アクセス</a></li>
@@ -26,7 +27,7 @@
   <h3 class="blog-menu"><a href="<?php echo home_url(); ?>/craftsmanship/"><img src="<?php echo get_template_directory_uri(); ?>/images/common/header_blog.png" srcset="<?php echo get_template_directory_uri(); ?>/images/common/header_blog.png 1x, <?php echo get_template_directory_uri(); ?>/images/common/header_blog@2x.png 2x" alt="M1のものづくり当社の取り組み"></a></h3>
   <ul class="side_lineup blog-menu-list">
     <ul class="side_lineup blog-menu-list">
-      <li><a href="#"><span class="new">揺れ止め治具</span></a></li>
+      <?php $count=0 ?>
       <?php
       $the_query = new WP_Query( array(
         'post_status' => 'publish',
@@ -36,8 +37,13 @@
 
 
       if ($the_query->have_posts()) :
-        while ($the_query->have_posts()) : $the_query->the_post(); ?>
-        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+        while ($the_query->have_posts()) : $the_query->the_post(); $count++;?>
+          <?php if($count == 1): ?>
+      		<li><a href="<?php the_permalink(); ?>"><span class="new"><?php the_title(); ?></span></a></li>
+        <?php else: ?>
+          <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+        <?php endif; ?>
+
   <?php endwhile; endif; ?>
   <?php wp_reset_query(); ?>
     </ul>

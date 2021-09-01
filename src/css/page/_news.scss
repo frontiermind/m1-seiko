@@ -1,0 +1,15 @@
+.news, .single-post{
+
+  .mainvisual {
+    background: url(../images/header/header_news.png);
+    background-size: cover;
+    @include max-screen($break_point_pc) {
+    background: url(../images/header/header_news_sp.png);
+    background-position: center;
+    }
+  }
+
+  @include max-screen($break_point_pc) {
+
+  }
+}

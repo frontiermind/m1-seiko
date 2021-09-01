@@ -31,7 +31,7 @@ get_header(); ?>
 
         <div class="top-operation_inner">
 
-          <h2><span>稼働状況</span></h2>
+          <h2><a href="<?php echo home_url('/'); ?>operation_status/"><span>稼働状況</span></a></h2>
 
           <ul class="top-operation_list">
 
@@ -71,27 +71,27 @@ get_header(); ?>
 
       <ul class="top-product">
         <li>
-            <a href="#">
+            <a href="<?php echo home_url('/'); ?>products/cylindrical_grinding/">
               <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_products01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/top/top_products01.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/top/top_products01@2x.jpg 2x" alt="">
               <h2><span>円筒研磨</span></h2>
             </a>
         </li>
         <li>
-            <a href="#">
+          <a href="<?php echo home_url('/'); ?>products/internal_grinding/">
               <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_products02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/top/top_products02.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/top/top_products02@2x.jpg 2x" alt="">
               <h2><span>内径研磨</span></h2>
             </a>
         </li>
         <li>
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_products03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/top/top_products03.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/top/top_products03@2x.jpg 2x" alt="">
-              <h2><span>その他加工</span></h2>
+          <a href="<?php echo home_url('/'); ?>products/screws/">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_products04.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/top/top_products04.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/top/top_products04@2x.jpg 2x" alt="">
+              <h2><span>ネジ研磨</span></h2>
             </a>
         </li>
         <li>
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_products04.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/top/top_products04.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/top/top_products04@2x.jpg 2x" alt="">
-              <h2><span>ネジ研磨</span></h2>
+          <a href="<?php echo home_url('/'); ?>products/">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_products03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/top/top_products03.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/top/top_products03@2x.jpg 2x" alt="">
+              <h2><span>その他加工</span></h2>
             </a>
         </li>
       </ul>
@@ -157,54 +157,38 @@ get_header(); ?>
         <h2>
           ニュース
         </h2>
+
+
+
         <ul class="newslist">
 
-          <li>
-            <a href="">
-              <div class="newslist-col newslist-date">2021.0.0</div>
-              <div class="newslist-col newslist-title">
-                <h3>ニュースタイトルニュースタイトルニュースタイトルニュースタイトルニュースタイトル</h3>
-               </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="newslist-col newslist-date">2021.0.0</div>
-              <div class="newslist-col newslist-title">
-                <h3>ニュースタイトルニュースタイトルニュースタイトルニュースタイトル</h3>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="newslist-col newslist-date">2021.0.0</div>
-              <div class="newslist-col newslist-title">
-                <h3>ニュースタイトルニュースタイトル</h3>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="newslist-col newslist-date">2021.0.0</div>
-              <div class="newslist-col newslist-title">
-                <h3>ニュースタイトル</h3>
-               </div>
-            </a>
-          </li>
+          <?php
+          $paged = get_query_var('paged', 1);
+          $query = new WP_Query(
+              array(
+                  'paged' => $paged,
+                  'posts_per_page' => 5,
+                  'post_type' => 'post'
+              )
+          );
+          ?>
+          <?php
 
-          <li>
-            <a href="">
-              <div class="newslist-col newslist-date">2021.0.0</div>
-              <div class="newslist-col newslist-title">
-                <h3>ニュースタイトル</h3>
-              </div>
-            </a>
-          </li>
-
+          if ( $query->have_posts() ) : ?>
+           <?php while ( $query->have_posts() ) : $query->the_post();?>
+             <li>
+               <a href="<?php the_permalink(); ?>">
+                 <div class="newslist-col newslist-date"><?php echo get_the_date('Y.n.j'); ?></div>
+                 <div class="newslist-col newslist-title">
+                   <h3><?php the_title(); ?></h3>
+                  </div>
+               </a>
+             </li>
+                <?php endwhile; endif; ?>
         </ul>
 
         <div class="btn-newslist">
-          <a href="#" target="_blank">ニュース一覧</a>
+          <a href="<?php echo home_url('/'); ?>news/">ニュース一覧</a>
         </div>
       </div>
       <div class="index-section__news_info_infobox">
@@ -212,7 +196,7 @@ get_header(); ?>
 
           <h2>お問い合わせ</h2>
 
-          <img src=".<?php echo get_template_directory_uri(); ?>/images/common/contact_img.png" alt="製品情報">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/contact_img.png" alt="製品情報">
 
           <div class="contact-info">
             <h3>有限会社 エムワン精工</h3>
@@ -225,8 +209,8 @@ get_header(); ?>
         </div>
 
         <ul class="index-section__news_info_infobox_bnr">
-          <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/common/iso_banner.png" alt="ISO認証 afaQ UKAS"></a></li>
-          <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog_banner.png" alt="職人切磋琢磨ブログ"></a></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/common/iso_banner.png" alt="ISO認証 afaQ UKAS"></li>
+          <li><a href="http://m1-seiko.sblo.jp/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog_banner.png" alt="職人切磋琢磨ブログ"></a></li>
         </ul>
 
 

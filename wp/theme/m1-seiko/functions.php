@@ -222,6 +222,10 @@ function my_img_shortcode() {
 }
 add_shortcode('path', 'my_img_shortcode');
 
+function shortcode_surl() {
+	return site_url();
+}
+add_shortcode('url', 'shortcode_surl');
 
 add_filter( 'wp_kses_allowed_html', 'my_wp_kses_allowed_html', 10, 2 );
 function my_wp_kses_allowed_html( $tags, $context ) {

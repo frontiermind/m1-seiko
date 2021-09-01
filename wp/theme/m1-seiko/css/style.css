@@ -3544,7 +3544,7 @@ sub__content
 .l-sidebar .side_lineup > li a {
   position: relative;
   display: block;
-  padding: 20px 26px;
+  padding: 20px 39px 20px 19px;
   color: #FE0000;
   font-size: 17px;
   font-weight: bold;
@@ -3558,7 +3558,7 @@ sub__content
   top: 0;
   bottom: 0;
   margin: auto;
-  right: 37px;
+  right: 23px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -3694,20 +3694,32 @@ sub__content
 
 /* ページごとのスタイル */
 
+.company .mainvisual,
+.iso9001_quality .mainvisual,
+.kamata_meisters_network .mainvisual,
+.access_map .mainvisual,
+.links .mainvisual,
+.company_info .mainvisual {
+  background: url(../images/header/header_company.png);
+  background-size: cover;
+}
+
 .company-info_header-description,
-.iso-info_header-description,
-.kmn-info_header-description,
+.iso9001_quality-info_header-description,
+.kamata_meisters_network-info_header-description,
 .access_map-info_header-description,
-.links-info_header-description {
+.links-info_header-description,
+.company_info-info_header-description {
   font-size: 15px;
   font-weight: 500;
 }
 
 .company-info_header_pdf,
-.iso-info_header_pdf,
-.kmn-info_header_pdf,
+.iso9001_quality-info_header_pdf,
+.kamata_meisters_network-info_header_pdf,
 .access_map-info_header_pdf,
-.links-info_header_pdf {
+.links-info_header_pdf,
+.company_info-info_header_pdf {
   background-color: #f5f5f5;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3723,18 +3735,20 @@ sub__content
 }
 
 .company-info_header_pdf .btn,
-.iso-info_header_pdf .btn,
-.kmn-info_header_pdf .btn,
+.iso9001_quality-info_header_pdf .btn,
+.kamata_meisters_network-info_header_pdf .btn,
 .access_map-info_header_pdf .btn,
-.links-info_header_pdf .btn {
+.links-info_header_pdf .btn,
+.company_info-info_header_pdf .btn {
   height: 40px;
 }
 
 .company-info_header h2,
-.iso-info_header h2,
-.kmn-info_header h2,
+.iso9001_quality-info_header h2,
+.kamata_meisters_network-info_header h2,
 .access_map-info_header h2,
-.links-info_header h2 {
+.links-info_header h2,
+.company_info-info_header h2 {
   font-size: 34px;
   padding: 12px 38px;
   margin-left: 16px;
@@ -3746,10 +3760,11 @@ sub__content
 }
 
 .company-info_header h2::after,
-.iso-info_header h2::after,
-.kmn-info_header h2::after,
+.iso9001_quality-info_header h2::after,
+.kamata_meisters_network-info_header h2::after,
 .access_map-info_header h2::after,
-.links-info_header h2::after {
+.links-info_header h2::after,
+.company_info-info_header h2::after {
   position: absolute;
   content: "";
   left: 0;
@@ -3761,20 +3776,22 @@ sub__content
 }
 
 .company-info_header h2 span,
-.iso-info_header h2 span,
-.kmn-info_header h2 span,
+.iso9001_quality-info_header h2 span,
+.kamata_meisters_network-info_header h2 span,
 .access_map-info_header h2 span,
-.links-info_header h2 span {
+.links-info_header h2 span,
+.company_info-info_header h2 span {
   display: block;
   -webkit-transform: skewX(20deg);
   transform: skewX(20deg);
 }
 
 .company-info_content h3,
-.iso-info_content h3,
-.kmn-info_content h3,
+.iso9001_quality-info_content h3,
+.kamata_meisters_network-info_content h3,
 .access_map-info_content h3,
-.links-info_content h3 {
+.links-info_content h3,
+.company_info-info_content h3 {
   font-size: 21px;
   position: relative;
   margin: 40px 0px 30px 0px;
@@ -3783,10 +3800,11 @@ sub__content
 }
 
 .company-info_content h3:after,
-.iso-info_content h3:after,
-.kmn-info_content h3:after,
+.iso9001_quality-info_content h3:after,
+.kamata_meisters_network-info_content h3:after,
 .access_map-info_content h3:after,
-.links-info_content h3:after {
+.links-info_content h3:after,
+.company_info-info_content h3:after {
   position: absolute;
   content: " ";
   display: block;
@@ -3799,10 +3817,11 @@ sub__content
 }
 
 .company-info_content h3:before,
-.iso-info_content h3:before,
-.kmn-info_content h3:before,
+.iso9001_quality-info_content h3:before,
+.kamata_meisters_network-info_content h3:before,
 .access_map-info_content h3:before,
-.links-info_content h3:before {
+.links-info_content h3:before,
+.company_info-info_content h3:before {
   position: absolute;
   content: " ";
   display: block;
@@ -3815,46 +3834,51 @@ sub__content
 }
 
 .company-info_content p,
-.iso-info_content p,
-.kmn-info_content p,
+.iso9001_quality-info_content p,
+.kamata_meisters_network-info_content p,
 .access_map-info_content p,
-.links-info_content p {
+.links-info_content p,
+.company_info-info_content p {
   margin: 10px 0;
   font-size: 15px;
   font-weight: 500;
 }
 
 .company-info_content_col p span.small,
-.iso-info_content_col p span.small,
-.kmn-info_content_col p span.small,
+.iso9001_quality-info_content_col p span.small,
+.kamata_meisters_network-info_content_col p span.small,
 .access_map-info_content_col p span.small,
-.links-info_content_col p span.small {
+.links-info_content_col p span.small,
+.company_info-info_content_col p span.small {
   font-weight: normal;
   font-size: 0.8em;
 }
 
 .company-info_content table,
-.iso-info_content table,
-.kmn-info_content table,
+.iso9001_quality-info_content table,
+.kamata_meisters_network-info_content table,
 .access_map-info_content table,
-.links-info_content table {
+.links-info_content table,
+.company_info-info_content table {
   width: 100%;
   margin: 0 auto;
 }
 
 .company-info_content table tr,
-.iso-info_content table tr,
-.kmn-info_content table tr,
+.iso9001_quality-info_content table tr,
+.kamata_meisters_network-info_content table tr,
 .access_map-info_content table tr,
-.links-info_content table tr {
+.links-info_content table tr,
+.company_info-info_content table tr {
   font-size: 14px;
 }
 
 .company-info_content table tr th,
-.iso-info_content table tr th,
-.kmn-info_content table tr th,
+.iso9001_quality-info_content table tr th,
+.kamata_meisters_network-info_content table tr th,
 .access_map-info_content table tr th,
-.links-info_content table tr th {
+.links-info_content table tr th,
+.company_info-info_content table tr th {
   background: #F4F7FB;
   border: 1px solid #E8E8E8;
   width: 20%;
@@ -3865,10 +3889,11 @@ sub__content
 }
 
 .company-info_content table tr td,
-.iso-info_content table tr td,
-.kmn-info_content table tr td,
+.iso9001_quality-info_content table tr td,
+.kamata_meisters_network-info_content table tr td,
 .access_map-info_content table tr td,
-.links-info_content table tr td {
+.links-info_content table tr td,
+.company_info-info_content table tr td {
   background: #fff;
   border: 1px solid #E8E8E8;
   text-align: left;
@@ -3876,52 +3901,58 @@ sub__content
 }
 
 .company-info_content ul,
-.iso-info_content ul,
-.kmn-info_content ul,
+.iso9001_quality-info_content ul,
+.kamata_meisters_network-info_content ul,
 .access_map-info_content ul,
-.links-info_content ul {
+.links-info_content ul,
+.company_info-info_content ul {
   padding-left: 20px;
 }
 
 .company-info_content ul li,
-.iso-info_content ul li,
-.kmn-info_content ul li,
+.iso9001_quality-info_content ul li,
+.kamata_meisters_network-info_content ul li,
 .access_map-info_content ul li,
-.links-info_content ul li {
+.links-info_content ul li,
+.company_info-info_content ul li {
   list-style: disc;
 }
 
 .company-info_content ol,
-.iso-info_content ol,
-.kmn-info_content ol,
+.iso9001_quality-info_content ol,
+.kamata_meisters_network-info_content ol,
 .access_map-info_content ol,
-.links-info_content ol {
+.links-info_content ol,
+.company_info-info_content ol {
   padding-left: 22px;
 }
 
 .company-info_content ol li,
-.iso-info_content ol li,
-.kmn-info_content ol li,
+.iso9001_quality-info_content ol li,
+.kamata_meisters_network-info_content ol li,
 .access_map-info_content ol li,
-.links-info_content ol li {
+.links-info_content ol li,
+.company_info-info_content ol li {
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .company-info_content ol li:before,
-.iso-info_content ol li:before,
-.kmn-info_content ol li:before,
+.iso9001_quality-info_content ol li:before,
+.kamata_meisters_network-info_content ol li:before,
 .access_map-info_content ol li:before,
-.links-info_content ol li:before {
+.links-info_content ol li:before,
+.company_info-info_content ol li:before {
   top: 2px;
   left: -7px;
 }
 
 .company-info_content ol li h4,
-.iso-info_content ol li h4,
-.kmn-info_content ol li h4,
+.iso9001_quality-info_content ol li h4,
+.kamata_meisters_network-info_content ol li h4,
 .access_map-info_content ol li h4,
-.links-info_content ol li h4 {
+.links-info_content ol li h4,
+.company_info-info_content ol li h4 {
   font-size: 16px;
 }
 
@@ -4251,7 +4282,7 @@ CONTACT
 =======================*/
 
 .craftsmanship .mainvisual {
-  background: url(/images/header/header_craftsmanship.jpg);
+  background: url(../images/header/header_craftsmanship.jpg);
   background-size: cover;
 }
 
@@ -4282,7 +4313,7 @@ CONTACT
   margin-bottom: 30px;
   border-radius: 15px;
   overflow: hidden;
-  background-color: #efefef;
+  background-color: #fff;
   position: relative;
   transition: 0.4s;
 }
@@ -4335,7 +4366,7 @@ CONTACT
   position: relative;
   line-height: 1;
   display: inline-block;
-  margin-right: 35px;
+  margin-right: 10px;
   padding-right: 15px;
   padding-bottom: 3px;
   color: #FE0000;
@@ -4542,6 +4573,10 @@ CONTACT
   z-index: 2;
   background: #FFF url(/images/common/bg_operation_sp.png) bottom no-repeat;
   background-size: contain;
+}
+
+.home .sec-product .l-container .top-operation_inner h2 a {
+  text-decoration: none;
 }
 
 .home .sec-product .l-container .top-operation_inner h2 span {
@@ -4960,6 +4995,12 @@ CONTACT
 
 .home .l-footer {
   margin-top: 0px;
+}
+
+.news .mainvisual,
+.single-post .mainvisual {
+  background: url(../images/header/header_news.png);
+  background-size: cover;
 }
 
 /* ====================
@@ -5447,6 +5488,50 @@ CONTACT
 .recruit .sec-recruit_photo.sec-content img {
   width: 100%;
   height: auto;
+}
+
+.operation_status .mainvisual {
+  background: url(../images/header/header_operation.png);
+  background-size: cover;
+}
+
+.operation_status .status-display_column_inner_percent {
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 40%;
+  padding: 20px 0px;
+}
+
+.operation_status .status-display_column_inner_txt {
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 17px;
+  width: 60%;
+}
+
+.operation_status .status-display_column_inner_percent img {
+  width: 60% !important;
+}
+
+.operation_status p.operation_percent {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: -5px;
+  color: #ffffff;
+}
+
+.operation_status p.possible {
+  display: inline-block;
+  color: #333;
+  background: #00E4FF;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 15px;
+  padding: 10px 20px;
 }
 
 /* ユーティリティ(color, size, spacing, etc.) */
@@ -6792,10 +6877,11 @@ CONTACT
   }
 
   .company-info_header,
-  .iso-info_header,
-  .kmn-info_header,
+  .iso9001_quality-info_header,
+  .kamata_meisters_network-info_header,
   .access_map-info_header,
-  .links-info_header {
+  .links-info_header,
+  .company_info-info_header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -6808,45 +6894,50 @@ CONTACT
   }
 
   .company-info_header-description,
-  .iso-info_header-description,
-  .kmn-info_header-description,
+  .iso9001_quality-info_header-description,
+  .kamata_meisters_network-info_header-description,
   .access_map-info_header-description,
-  .links-info_header-description {
+  .links-info_header-description,
+  .company_info-info_header-description {
     width: 60%;
   }
 
   .company-info_header_pdf,
-  .iso-info_header_pdf,
-  .kmn-info_header_pdf,
+  .iso9001_quality-info_header_pdf,
+  .kamata_meisters_network-info_header_pdf,
   .access_map-info_header_pdf,
-  .links-info_header_pdf {
+  .links-info_header_pdf,
+  .company_info-info_header_pdf {
     width: 35%;
     margin-top: 0px;
   }
 
   .company-info_content h3,
-  .iso-info_content h3,
-  .kmn-info_content h3,
+  .iso9001_quality-info_content h3,
+  .kamata_meisters_network-info_content h3,
   .access_map-info_content h3,
-  .links-info_content h3 {
+  .links-info_content h3,
+  .company_info-info_content h3 {
     font-size: 25px;
   }
 
   .company-info_content_col,
-  .iso-info_content_col,
-  .kmn-info_content_col,
+  .iso9001_quality-info_content_col,
+  .kamata_meisters_network-info_content_col,
   .access_map-info_content_col,
-  .links-info_content_col {
+  .links-info_content_col,
+  .company_info-info_content_col {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
 
   .company-info_content_col img,
-  .iso-info_content_col img,
-  .kmn-info_content_col img,
+  .iso9001_quality-info_content_col img,
+  .kamata_meisters_network-info_content_col img,
   .access_map-info_content_col img,
-  .links-info_content_col img {
+  .links-info_content_col img,
+  .company_info-info_content_col img {
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -6854,18 +6945,20 @@ CONTACT
   }
 
   .company-info_content_col p,
-  .iso-info_content_col p,
-  .kmn-info_content_col p,
+  .iso9001_quality-info_content_col p,
+  .kamata_meisters_network-info_content_col p,
   .access_map-info_content_col p,
-  .links-info_content_col p {
+  .links-info_content_col p,
+  .company_info-info_content_col p {
     margin-top: 0px;
   }
 
   .company-info_content table,
-  .iso-info_content table,
-  .kmn-info_content table,
+  .iso9001_quality-info_content table,
+  .kamata_meisters_network-info_content table,
   .access_map-info_content table,
-  .links-info_content table {
+  .links-info_content table,
+  .company_info-info_content table {
     width: 100%;
   }
 
@@ -7195,6 +7288,18 @@ CONTACT
     padding: 130px 0;
   }
 
+  .operation_status .status-display_column_inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .u-pc-hide {
     display: none !important;
   }
@@ -7341,6 +7446,7 @@ CONTACT
   .l-page .mainvisual {
     background: url(/images/header/header_ento_sp.jpg);
     height: auto;
+    background-position: center;
   }
 
   .l-page .mainvisual .l-container {
@@ -7358,7 +7464,7 @@ CONTACT
   }
 
   .l-page .mainvisual .l-container .mainvisual-inner h2 span {
-    font-size: 23px;
+    font-size: 16px;
     padding-top: 15px;
   }
 
@@ -7522,20 +7628,32 @@ CONTACT
     display: none;
   }
 
+  .company .mainvisual,
+  .iso9001_quality .mainvisual,
+  .kamata_meisters_network .mainvisual,
+  .access_map .mainvisual,
+  .links .mainvisual,
+  .company_info .mainvisual {
+    background: url(../images/header/header_company_sp.png);
+    background-position: center;
+  }
+
   .company-info_header h2,
-  .iso-info_header h2,
-  .kmn-info_header h2,
+  .iso9001_quality-info_header h2,
+  .kamata_meisters_network-info_header h2,
   .access_map-info_header h2,
-  .links-info_header h2 {
+  .links-info_header h2,
+  .company_info-info_header h2 {
     line-height: 1.3;
     font-size: 28px;
   }
 
   .company-info_content table tr th,
-  .iso-info_content table tr th,
-  .kmn-info_content table tr th,
+  .iso9001_quality-info_content table tr th,
+  .kamata_meisters_network-info_content table tr th,
   .access_map-info_content table tr th,
-  .links-info_content table tr th {
+  .links-info_content table tr th,
+  .company_info-info_content table tr th {
     display: block;
     border: none;
     width: 100%;
@@ -7544,10 +7662,11 @@ CONTACT
   }
 
   .company-info_content table tr td,
-  .iso-info_content table tr td,
-  .kmn-info_content table tr td,
+  .iso9001_quality-info_content table tr td,
+  .kamata_meisters_network-info_content table tr td,
   .access_map-info_content table tr td,
-  .links-info_content table tr td {
+  .links-info_content table tr td,
+  .company_info-info_content table tr td {
     display: block;
     border: none;
     margin-bottom: 15px;
@@ -7582,7 +7701,8 @@ CONTACT
   }
 
   .craftsmanship .mainvisual {
-    background: url(/images/header/header_craftsmanship_sp.jpg);
+    background: url(../images/header/header_craftsmanship_sp.jpg);
+    background-position: center;
   }
 
   .craftsmanship .l-main .sec-content__inner .pdlist li {
@@ -7684,6 +7804,12 @@ CONTACT
     width: auto;
   }
 
+  .news .mainvisual,
+  .single-post .mainvisual {
+    background: url(../images/header/header_news_sp.png);
+    background-position: center;
+  }
+
   .products .l-main .sec-content__inner .pdlist li {
     width: 100%;
   }
@@ -7758,6 +7884,21 @@ CONTACT
     display: block;
     border: none;
     margin-bottom: 15px;
+  }
+
+  .operation_status .mainvisual {
+    background: url(../images/header/header_operation_sp.png);
+    background-position: center;
+  }
+
+  .operation_status .status-display_column_inner_percent {
+    width: 100%;
+  }
+
+  .operation_status .status-display_column_inner_txt {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
   }
 }
 

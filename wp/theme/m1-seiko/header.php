@@ -51,7 +51,7 @@
 
       <div class="header-top">
         <h1 class="header-logo">
-          <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="エムワン精工"></a>
+          <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="エムワン精工"></a>
         </h1>
         <div class="g-nav-block">
         <nav id="js-menu" class="globalnavi">
