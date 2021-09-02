@@ -1,5 +1,12 @@
-.company,.iso,.kmn,.access_map,.links{
-
+.company,.iso9001_quality,.kamata_meisters_network,.access_map,.links,.company_info{
+  .mainvisual {
+    background: url(../images/header/header_company.png);
+    background-size: cover;
+    @include max-screen($break_point_pc) {
+    background: url(../images/header/header_company_sp.png);
+    background-position: center;
+    }
+  }
   &-info{
     &_header{
       //margin-bottom: 40px;

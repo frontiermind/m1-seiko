@@ -45,6 +45,7 @@ gulp.task('styles', function() {
     .pipe(gcmq())
     // .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('./wp/theme/m1-seiko/css'))
     .pipe(browserSync.stream());
 });
 
@@ -55,6 +56,7 @@ gulp.task('scripts', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify({output: {comments: 'some'}}))
     .pipe(gulp.dest('./public/js'))
+    .pipe(gulp.dest('./wp/theme/m1-seiko/js'))
     .pipe(browserSync.stream());
 });
 

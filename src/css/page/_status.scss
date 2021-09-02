@@ -1,0 +1,70 @@
+.operation_status{
+  .mainvisual {
+    background: url(../images/header/header_operation.png);
+    background-size: cover;
+    @include max-screen($break_point_pc) {
+    background: url(../images/header/header_operation_sp.png);
+    background-position: center;
+    }
+  }
+  .status{
+    &-display{
+      &_column{
+        &_inner{
+          @include min-screen($break_point_pc) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+          &_percent{
+            text-align: center;
+            background-color: #1a1a1a;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 40%;
+            padding: 20px 0px;
+            @include max-screen($break_point_pc) {
+              width: 100%;
+            }
+          }
+          &_txt{
+            padding-left: 30px;
+            font-weight: bold;
+            font-size: 17px;
+            width: 60%;
+            @include max-screen($break_point_pc) {
+              width: 100%;
+              padding-left: 0px;
+              padding-top: 30px;
+            }
+          }
+
+          &_percent{
+            img{
+              width: 60% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  p.operation_percent{
+    font-size: 18px;
+    font-weight: bold;
+    //margin-top: -5px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    color: $white;
+  }
+  p.possible{
+    display: inline-block;
+    color: #333;
+    background: #00E4FF;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 15px;
+    padding: 10px 20px;
+  }
+}

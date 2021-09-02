@@ -21,6 +21,7 @@ common lower page header
   @include max-screen($break_point_pc) {
   background: url(/images/header/header_ento_sp.jpg);
   height: auto;
+  background-position: center;
   }
 .l-container{
   display: block;
@@ -87,7 +88,7 @@ common lower page header
       font-weight: 600;
       //font-family: $webfont;
       @include max-screen($break_point_pc) {
-        font-size: 23px;
+        font-size: 16px;
         padding-top: 15px;
       }
     }
