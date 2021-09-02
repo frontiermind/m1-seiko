@@ -42,7 +42,9 @@ get_header(); ?>
                 <div class="pdlist-inner">
                   <div class="pdlist-inner_contents">
                   <h3 class="pdlist-title"><span><?php the_title(); ?></span></h3>
-                  <p>センター孔研磨機を活用し、<br>高い軸精度の製品を手がけています。</p>
+                  <?php  if(get_field("cs_catch")): ?>
+                  <p><?php echo get_field("cs_catch"); ?></p>
+                  <?php  endif;?>
                   </div>
                 </div>
                 </a>

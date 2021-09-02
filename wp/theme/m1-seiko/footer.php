@@ -10,7 +10,7 @@
      <ul>
        <li> <a href="<?php echo home_url('/'); ?>products/">製品情報</a></li>
        <li><a href="<?php echo home_url('/'); ?>company_info/">会社概要</a></li>
-       <li><a href="<?php echo home_url('/'); ?>craftsmanship/"><p>エムワンのものづくり</a></li>
+       <li><a href="<?php echo home_url('/'); ?>craftsmanship/">エムワンのものづくり</a></li>
        <li><a href="<?php echo home_url('/'); ?>recruit/">採用情報</a></li>
        <li><a href="<?php echo home_url('/'); ?>contact/">お問い合わせ</a></li>
        <li><a href="<?php echo home_url('/'); ?>links/">リンク</a></li>
