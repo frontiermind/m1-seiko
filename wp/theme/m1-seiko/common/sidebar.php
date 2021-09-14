@@ -31,7 +31,7 @@
     </a>
   </div>
 
-  <h3>COMPANY<span>会社概要</span></h3>
+  <h3>COMPANY<span>会社案内</span></h3>
   <ul class="side_lineup">
     <li><a href="<?php echo home_url(); ?>/company_info/">会社概要</a></li>
     <li><a href="<?php echo home_url(); ?>/iso9001_quality/">品質/ISO</a></li>
@@ -57,12 +57,20 @@
 
 
     if ($the_query->have_posts()) :
-      while ($the_query->have_posts()) : $the_query->the_post(); $count++;?>
-        <?php if($count == 1): ?>
-    		<li><a href="<?php the_permalink(); ?>"><span class="new"><?php the_title(); ?></span></a></li>
-      <?php else: ?>
-        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-      <?php endif; ?>
+      while ($the_query->have_posts()) : $the_query->the_post();?>
+    		<li><a href="<?php the_permalink(); ?>">
+
+          <?php $checkbox = get_field('new_on'); ?>
+<?php if ($checkbox && in_array('true', $checkbox)) : ?>
+          <span class="new"><?php the_title(); ?></span>
+
+        <?php else:?>
+
+          <?php the_title(); ?>
+
+        <?php endif;?>
+
+        </a></li>
 
 <?php endwhile; endif; ?>
 <?php wp_reset_query(); ?>

@@ -36,7 +36,7 @@ get_header(); ?>
                 <a href="<?php the_permalink(); ?>">
                 <div class="pdlist-img">
                   <?php  if(get_field("cs_thumb")): ?>
-                    <img src="<?php echo get_field("cs_thumb"); ?>" />
+                    <img src="<?php echo get_field("cs_thumb"); ?>" alt="<?php the_title(); ?>" />
                   <?php  endif;?>
                 </div>
                 <div class="pdlist-inner">

@@ -46,6 +46,8 @@ get_header(); ?>
 
 <?php include TEMPLATEPATH.'/common/contact.php';?>
 
+<?php include TEMPLATEPATH.'/common/sidebarsp.php';?>
+
     </main>
     <!-- / main -->
 

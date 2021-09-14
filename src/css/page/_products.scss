@@ -191,7 +191,7 @@
         transform: skewX(-20deg);
         @include max-screen($break_point_pc) {
         line-height: 1.3;
-        font-size: 28px;
+        font-size: 25px;
       }
       &::after{
         position: absolute;

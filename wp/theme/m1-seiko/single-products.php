@@ -5,7 +5,11 @@
 get_header(); ?>
 <!-- ここからコンテンツ -->
 
-<div class="main-block side-contents products products-single single l-page">
+<?php // 投稿のスラッグを取得
+ $page = get_post( get_the_ID() ); $slug = $page->post_name;
+?>
+
+<div class="main-block side-contents products products-single single l-page <?php echo $slug; ?>">
   <div class="mainvisual">
 
     <div class="l-container">

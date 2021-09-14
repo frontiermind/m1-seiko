@@ -38,22 +38,22 @@ get_header(); ?>
             <li>
               <h3>円筒研磨<br class="u-pc-hide">加工</h3>
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-              <p class="operation_percent">50%</p>
-              <p class="possible">受注可能</p>
+              <p class="operation_percent">75%</p>
+              <p class="possible">要相談</p>
             </li>
 
             <li>
               <h3>内径研磨<br class="u-pc-hide">加工</h3>
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-              <p class="operation_percent">50%</p>
-              <p class="possible">受注可能</p>
+              <p class="operation_percent">75%</p>
+              <p class="possible">要相談</p>
             </li>
 
             <li>
               <h3>ネジ研磨<br class="u-pc-hide">加工</h3>
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-              <p class="operation_percent">50%</p>
-              <p class="possible">受注可能</p>
+              <p class="operation_percent">75%</p>
+              <p class="possible">要相談</p>
             </li>
 
             <li>
@@ -196,7 +196,7 @@ get_header(); ?>
 
           <h2>お問い合わせ</h2>
 
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/contact_img.png" alt="製品情報">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/contact_img.png" alt="切磋琢磨アイコン">
 
           <div class="contact-info">
             <h3>有限会社 エムワン精工</h3>

@@ -1,4 +1,4 @@
-.company,.iso9001_quality,.kamata_meisters_network,.access_map,.links,.company_info{
+.company,.iso9001_quality,.kamata_meisters_network .kmn,.access_map,.links,.company_info{
   .mainvisual {
     background: url(../images/header/header_company.png);
     background-size: cover;
@@ -48,7 +48,7 @@
         transform: skewX(-20deg);
         @include max-screen($break_point_pc) {
         line-height: 1.3;
-        font-size: 28px;
+        font-size: 23px;
       }
       &::after{
         position: absolute;
@@ -264,7 +264,7 @@ left: -7px;
     }
   }
   .kmn-info_header-description{
-    width: 100%;
+    width: 100%!important;
   }
 }
 

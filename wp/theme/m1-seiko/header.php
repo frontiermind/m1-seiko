@@ -58,7 +58,7 @@
            <ul class="gnavi-list">
              <li> <a class="nav-top" href="<?php echo home_url('/'); ?>"><p>TOP</p></a></li>
              <li> <a class="nav-products" href="<?php echo home_url('/'); ?>products/"><p>製品情報</p></a></li>
-             <li><a class="nav-overview" href="<?php echo home_url('/'); ?>company_info/"><p>会社概要</p></a></li>
+             <li><a class="nav-overview" href="<?php echo home_url('/'); ?>company_info/"><p>会社案内</p></a></li>
              <li><a class="nav-contact" href="<?php echo home_url('/'); ?>craftsmanship/"><p>エムワンのものづくり</p></a></li>
              <li><a class="nav-estimate" href="<?php echo home_url('/'); ?>recruit/"><p>採用情報</p></a></li>
              <li><a class="nav-faq" href="<?php echo home_url('/'); ?>contact/"><p><i class="fas fa-envelope"></i>お問い合わせ</p></a></li>

@@ -40,8 +40,8 @@ get_header(); ?>
             <div class="status-display_column_inner">
               <div class="status-display_column_inner_percent">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-                <p class="operation_percent">50%</p>
-                <p class="possible">受注可能</p>
+                <p class="operation_percent">75%</p>
+                <p class="possible">要相談</p>
               </div>
               <div class="status-display_column_inner_txt">
                 混雑していますが受注可能です。<br>納期等お問合せください。
@@ -54,8 +54,8 @@ get_header(); ?>
             <div class="status-display_column_inner">
               <div class="status-display_column_inner_percent">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-                <p class="operation_percent">50%</p>
-                <p class="possible">受注可能</p>
+                <p class="operation_percent">75%</p>
+                <p class="possible">要相談</p>
               </div>
               <div class="status-display_column_inner_txt">
                 混雑していますが受注可能です。<br>納期等お問合せください。
@@ -68,8 +68,8 @@ get_header(); ?>
             <div class="status-display_column_inner">
               <div class="status-display_column_inner_percent">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-                <p class="operation_percent">50%</p>
-                <p class="possible">受注可能</p>
+                <p class="operation_percent">75%</p>
+                <p class="possible">要相談</p>
               </div>
               <div class="status-display_column_inner_txt">
                 混雑していますが受注可能です。<br>納期等お問合せください。
@@ -86,7 +86,7 @@ get_header(); ?>
                 <p class="possible">受注可能</p>
               </div>
               <div class="status-display_column_inner_txt">
-                混雑していますが受注可能です。<br>納期等お問合せください。
+                受注可能です。<br>お気軽にお問合せください。
               </div>
             </div>
           </div>
@@ -96,6 +96,8 @@ get_header(); ?>
       </div>
 
 <?php include TEMPLATEPATH.'/common/contact.php';?>
+
+<?php include TEMPLATEPATH.'/common/sidebarsp.php';?>
 
     </main>
     <!-- / main -->

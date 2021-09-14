@@ -3696,7 +3696,7 @@ sub__content
 
 .company .mainvisual,
 .iso9001_quality .mainvisual,
-.kamata_meisters_network .mainvisual,
+.kamata_meisters_network .kmn .mainvisual,
 .access_map .mainvisual,
 .links .mainvisual,
 .company_info .mainvisual {
@@ -3706,7 +3706,7 @@ sub__content
 
 .company-info_header-description,
 .iso9001_quality-info_header-description,
-.kamata_meisters_network-info_header-description,
+.kamata_meisters_network .kmn-info_header-description,
 .access_map-info_header-description,
 .links-info_header-description,
 .company_info-info_header-description {
@@ -3716,7 +3716,7 @@ sub__content
 
 .company-info_header_pdf,
 .iso9001_quality-info_header_pdf,
-.kamata_meisters_network-info_header_pdf,
+.kamata_meisters_network .kmn-info_header_pdf,
 .access_map-info_header_pdf,
 .links-info_header_pdf,
 .company_info-info_header_pdf {
@@ -3736,7 +3736,7 @@ sub__content
 
 .company-info_header_pdf .btn,
 .iso9001_quality-info_header_pdf .btn,
-.kamata_meisters_network-info_header_pdf .btn,
+.kamata_meisters_network .kmn-info_header_pdf .btn,
 .access_map-info_header_pdf .btn,
 .links-info_header_pdf .btn,
 .company_info-info_header_pdf .btn {
@@ -3745,7 +3745,7 @@ sub__content
 
 .company-info_header h2,
 .iso9001_quality-info_header h2,
-.kamata_meisters_network-info_header h2,
+.kamata_meisters_network .kmn-info_header h2,
 .access_map-info_header h2,
 .links-info_header h2,
 .company_info-info_header h2 {
@@ -3761,7 +3761,7 @@ sub__content
 
 .company-info_header h2::after,
 .iso9001_quality-info_header h2::after,
-.kamata_meisters_network-info_header h2::after,
+.kamata_meisters_network .kmn-info_header h2::after,
 .access_map-info_header h2::after,
 .links-info_header h2::after,
 .company_info-info_header h2::after {
@@ -3777,7 +3777,7 @@ sub__content
 
 .company-info_header h2 span,
 .iso9001_quality-info_header h2 span,
-.kamata_meisters_network-info_header h2 span,
+.kamata_meisters_network .kmn-info_header h2 span,
 .access_map-info_header h2 span,
 .links-info_header h2 span,
 .company_info-info_header h2 span {
@@ -3788,7 +3788,7 @@ sub__content
 
 .company-info_content h3,
 .iso9001_quality-info_content h3,
-.kamata_meisters_network-info_content h3,
+.kamata_meisters_network .kmn-info_content h3,
 .access_map-info_content h3,
 .links-info_content h3,
 .company_info-info_content h3 {
@@ -3801,7 +3801,7 @@ sub__content
 
 .company-info_content h3:after,
 .iso9001_quality-info_content h3:after,
-.kamata_meisters_network-info_content h3:after,
+.kamata_meisters_network .kmn-info_content h3:after,
 .access_map-info_content h3:after,
 .links-info_content h3:after,
 .company_info-info_content h3:after {
@@ -3818,7 +3818,7 @@ sub__content
 
 .company-info_content h3:before,
 .iso9001_quality-info_content h3:before,
-.kamata_meisters_network-info_content h3:before,
+.kamata_meisters_network .kmn-info_content h3:before,
 .access_map-info_content h3:before,
 .links-info_content h3:before,
 .company_info-info_content h3:before {
@@ -3835,7 +3835,7 @@ sub__content
 
 .company-info_content p,
 .iso9001_quality-info_content p,
-.kamata_meisters_network-info_content p,
+.kamata_meisters_network .kmn-info_content p,
 .access_map-info_content p,
 .links-info_content p,
 .company_info-info_content p {
@@ -3846,7 +3846,7 @@ sub__content
 
 .company-info_content_col p span.small,
 .iso9001_quality-info_content_col p span.small,
-.kamata_meisters_network-info_content_col p span.small,
+.kamata_meisters_network .kmn-info_content_col p span.small,
 .access_map-info_content_col p span.small,
 .links-info_content_col p span.small,
 .company_info-info_content_col p span.small {
@@ -3856,7 +3856,7 @@ sub__content
 
 .company-info_content table,
 .iso9001_quality-info_content table,
-.kamata_meisters_network-info_content table,
+.kamata_meisters_network .kmn-info_content table,
 .access_map-info_content table,
 .links-info_content table,
 .company_info-info_content table {
@@ -3866,7 +3866,7 @@ sub__content
 
 .company-info_content table tr,
 .iso9001_quality-info_content table tr,
-.kamata_meisters_network-info_content table tr,
+.kamata_meisters_network .kmn-info_content table tr,
 .access_map-info_content table tr,
 .links-info_content table tr,
 .company_info-info_content table tr {
@@ -3875,7 +3875,7 @@ sub__content
 
 .company-info_content table tr th,
 .iso9001_quality-info_content table tr th,
-.kamata_meisters_network-info_content table tr th,
+.kamata_meisters_network .kmn-info_content table tr th,
 .access_map-info_content table tr th,
 .links-info_content table tr th,
 .company_info-info_content table tr th {
@@ -3890,7 +3890,7 @@ sub__content
 
 .company-info_content table tr td,
 .iso9001_quality-info_content table tr td,
-.kamata_meisters_network-info_content table tr td,
+.kamata_meisters_network .kmn-info_content table tr td,
 .access_map-info_content table tr td,
 .links-info_content table tr td,
 .company_info-info_content table tr td {
@@ -3902,7 +3902,7 @@ sub__content
 
 .company-info_content ul,
 .iso9001_quality-info_content ul,
-.kamata_meisters_network-info_content ul,
+.kamata_meisters_network .kmn-info_content ul,
 .access_map-info_content ul,
 .links-info_content ul,
 .company_info-info_content ul {
@@ -3911,7 +3911,7 @@ sub__content
 
 .company-info_content ul li,
 .iso9001_quality-info_content ul li,
-.kamata_meisters_network-info_content ul li,
+.kamata_meisters_network .kmn-info_content ul li,
 .access_map-info_content ul li,
 .links-info_content ul li,
 .company_info-info_content ul li {
@@ -3920,7 +3920,7 @@ sub__content
 
 .company-info_content ol,
 .iso9001_quality-info_content ol,
-.kamata_meisters_network-info_content ol,
+.kamata_meisters_network .kmn-info_content ol,
 .access_map-info_content ol,
 .links-info_content ol,
 .company_info-info_content ol {
@@ -3929,7 +3929,7 @@ sub__content
 
 .company-info_content ol li,
 .iso9001_quality-info_content ol li,
-.kamata_meisters_network-info_content ol li,
+.kamata_meisters_network .kmn-info_content ol li,
 .access_map-info_content ol li,
 .links-info_content ol li,
 .company_info-info_content ol li {
@@ -3939,7 +3939,7 @@ sub__content
 
 .company-info_content ol li:before,
 .iso9001_quality-info_content ol li:before,
-.kamata_meisters_network-info_content ol li:before,
+.kamata_meisters_network .kmn-info_content ol li:before,
 .access_map-info_content ol li:before,
 .links-info_content ol li:before,
 .company_info-info_content ol li:before {
@@ -3949,7 +3949,7 @@ sub__content
 
 .company-info_content ol li h4,
 .iso9001_quality-info_content ol li h4,
-.kamata_meisters_network-info_content ol li h4,
+.kamata_meisters_network .kmn-info_content ol li h4,
 .access_map-info_content ol li h4,
 .links-info_content ol li h4,
 .company_info-info_content ol li h4 {
@@ -4013,7 +4013,7 @@ sub__content
 }
 
 .kamata_meisters_network .kmn-info_header-description {
-  width: 100%;
+  width: 100% !important;
 }
 
 .access_map-info_header {
@@ -6878,7 +6878,7 @@ CONTACT
 
   .company-info_header,
   .iso9001_quality-info_header,
-  .kamata_meisters_network-info_header,
+  .kamata_meisters_network .kmn-info_header,
   .access_map-info_header,
   .links-info_header,
   .company_info-info_header {
@@ -6895,7 +6895,7 @@ CONTACT
 
   .company-info_header-description,
   .iso9001_quality-info_header-description,
-  .kamata_meisters_network-info_header-description,
+  .kamata_meisters_network .kmn-info_header-description,
   .access_map-info_header-description,
   .links-info_header-description,
   .company_info-info_header-description {
@@ -6904,7 +6904,7 @@ CONTACT
 
   .company-info_header_pdf,
   .iso9001_quality-info_header_pdf,
-  .kamata_meisters_network-info_header_pdf,
+  .kamata_meisters_network .kmn-info_header_pdf,
   .access_map-info_header_pdf,
   .links-info_header_pdf,
   .company_info-info_header_pdf {
@@ -6914,7 +6914,7 @@ CONTACT
 
   .company-info_content h3,
   .iso9001_quality-info_content h3,
-  .kamata_meisters_network-info_content h3,
+  .kamata_meisters_network .kmn-info_content h3,
   .access_map-info_content h3,
   .links-info_content h3,
   .company_info-info_content h3 {
@@ -6923,7 +6923,7 @@ CONTACT
 
   .company-info_content_col,
   .iso9001_quality-info_content_col,
-  .kamata_meisters_network-info_content_col,
+  .kamata_meisters_network .kmn-info_content_col,
   .access_map-info_content_col,
   .links-info_content_col,
   .company_info-info_content_col {
@@ -6934,7 +6934,7 @@ CONTACT
 
   .company-info_content_col img,
   .iso9001_quality-info_content_col img,
-  .kamata_meisters_network-info_content_col img,
+  .kamata_meisters_network .kmn-info_content_col img,
   .access_map-info_content_col img,
   .links-info_content_col img,
   .company_info-info_content_col img {
@@ -6946,7 +6946,7 @@ CONTACT
 
   .company-info_content_col p,
   .iso9001_quality-info_content_col p,
-  .kamata_meisters_network-info_content_col p,
+  .kamata_meisters_network .kmn-info_content_col p,
   .access_map-info_content_col p,
   .links-info_content_col p,
   .company_info-info_content_col p {
@@ -6955,7 +6955,7 @@ CONTACT
 
   .company-info_content table,
   .iso9001_quality-info_content table,
-  .kamata_meisters_network-info_content table,
+  .kamata_meisters_network .kmn-info_content table,
   .access_map-info_content table,
   .links-info_content table,
   .company_info-info_content table {
@@ -7630,7 +7630,7 @@ CONTACT
 
   .company .mainvisual,
   .iso9001_quality .mainvisual,
-  .kamata_meisters_network .mainvisual,
+  .kamata_meisters_network .kmn .mainvisual,
   .access_map .mainvisual,
   .links .mainvisual,
   .company_info .mainvisual {
@@ -7640,17 +7640,17 @@ CONTACT
 
   .company-info_header h2,
   .iso9001_quality-info_header h2,
-  .kamata_meisters_network-info_header h2,
+  .kamata_meisters_network .kmn-info_header h2,
   .access_map-info_header h2,
   .links-info_header h2,
   .company_info-info_header h2 {
     line-height: 1.3;
-    font-size: 28px;
+    font-size: 23px;
   }
 
   .company-info_content table tr th,
   .iso9001_quality-info_content table tr th,
-  .kamata_meisters_network-info_content table tr th,
+  .kamata_meisters_network .kmn-info_content table tr th,
   .access_map-info_content table tr th,
   .links-info_content table tr th,
   .company_info-info_content table tr th {
@@ -7663,7 +7663,7 @@ CONTACT
 
   .company-info_content table tr td,
   .iso9001_quality-info_content table tr td,
-  .kamata_meisters_network-info_content table tr td,
+  .kamata_meisters_network .kmn-info_content table tr td,
   .access_map-info_content table tr td,
   .links-info_content table tr td,
   .company_info-info_content table tr td {
@@ -7824,7 +7824,7 @@ CONTACT
 
   .products-single_header h2 {
     line-height: 1.3;
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .products-single table.comparison tr {
