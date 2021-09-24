@@ -4818,6 +4818,7 @@ CONTACT
 
 .home .index-section__news_info_container {
   padding: 0 20px;
+  display: block;
 }
 
 .home .index-section__news_info_container:after {
@@ -4826,7 +4827,12 @@ CONTACT
   display: block;
 }
 
-.home .index-section__news_info_newsbox {
+.home .index-section__news_info_newsbox_pre {
+  margin-bottom: 30px;
+}
+
+.home .index-section__news_info_newsbox_inner,
+.home .index-section__news_info_newsbox_pre {
   background: #ffffff;
   padding: 40px 36px;
   border-radius: 12px;
@@ -7119,9 +7125,13 @@ CONTACT
 
   .home .index-section__news_info_container {
     padding: 0 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
-  .home .index-section__news_info_newsbox {
+  .home .index-section__news_info_newsbox_inner,
+  .home .index-section__news_info_newsbox_pre {
     width: 740px;
     float: left;
   }

@@ -37,30 +37,102 @@ get_header(); ?>
 
             <li>
               <h3>円筒研磨<br class="u-pc-hide">加工</h3>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-              <p class="operation_percent">75%</p>
-              <p class="possible">要相談</p>
+              <?php
+              $cylindrical_grinding_status = get_field('cylindrical_grinding_status',128);
+              if ($cylindrical_grinding_status == 'status_25') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/25.png" alt="25%">
+                <p class="operation_percent">25%</p>
+                <p class="possible">余裕アリ</p>
+              <?php } elseif ($cylindrical_grinding_status == 'status_50') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/50.png" alt="50%">
+                <p class="operation_percent">50%</p>
+                <p class="possible">受注可能</p>
+              <?php } elseif ($cylindrical_grinding_status == 'status_75') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/75.png" alt="75%">
+                <p class="operation_percent">75%</p>
+                <p class="possible">要相談</p>
+              <?php } elseif ($cylindrical_grinding_status == 'status_100') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/100.png" alt="100%">
+                <p class="operation_percent">100%</p>
+                <p class="possible">フル稼働</p>
+              <?php } else { ?>
+
+              <?php } ?>
             </li>
 
             <li>
               <h3>内径研磨<br class="u-pc-hide">加工</h3>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-              <p class="operation_percent">75%</p>
-              <p class="possible">要相談</p>
+              <?php
+              $internal_grinding_status = get_field('internal_grinding_status',128);
+              if ($internal_grinding_status == 'status_25') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/25.png" alt="25%">
+                <p class="operation_percent">25%</p>
+                <p class="possible">余裕アリ</p>
+              <?php } elseif ($internal_grinding_status == 'status_50') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/50.png" alt="50%">
+                <p class="operation_percent">50%</p>
+                <p class="possible">受注可能</p>
+              <?php } elseif ($internal_grinding_status == 'status_75') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/75.png" alt="75%">
+                <p class="operation_percent">75%</p>
+                <p class="possible">要相談</p>
+              <?php } elseif ($internal_grinding_status == 'status_100') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/100.png" alt="100%">
+                <p class="operation_percent">100%</p>
+                <p class="possible">フル稼働</p>
+              <?php } else { ?>
+
+              <?php } ?>
             </li>
 
             <li>
               <h3>ネジ研磨<br class="u-pc-hide">加工</h3>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-              <p class="operation_percent">75%</p>
-              <p class="possible">要相談</p>
+              <?php
+              $screws_status = get_field('screws_status',128);
+              if ($screws_status == 'status_25') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/25.png" alt="25%">
+                <p class="operation_percent">25%</p>
+                <p class="possible">余裕アリ</p>
+              <?php } elseif ($screws_status == 'status_50') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/50.png" alt="50%">
+                <p class="operation_percent">50%</p>
+                <p class="possible">受注可能</p>
+              <?php } elseif ($screws_status == 'status_75') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/75.png" alt="75%">
+                <p class="operation_percent">75%</p>
+                <p class="possible">要相談</p>
+              <?php } elseif ($screws_status == 'status_100') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/100.png" alt="100%">
+                <p class="operation_percent">100%</p>
+                <p class="possible">フル稼働</p>
+              <?php } else { ?>
+
+              <?php } ?>
             </li>
 
             <li>
               <h3>雌ネジ<br class="u-pc-hide">加工</h3>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/common/operation_50.png" alt="50%">
-              <p class="operation_percent">50%</p>
-              <p class="possible">受注可能</p>
+              <?php
+              $femele_screw_status = get_field('femele_screw_status',128);
+              if ($femele_screw_status == 'status_25') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/25.png" alt="25%">
+                <p class="operation_percent">25%</p>
+                <p class="possible">余裕アリ</p>
+              <?php } elseif ($femele_screw_status == 'status_50') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/50.png" alt="50%">
+                <p class="operation_percent">50%</p>
+                <p class="possible">受注可能</p>
+              <?php } elseif ($femele_screw_status == 'status_75') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/75.png" alt="75%">
+                <p class="operation_percent">75%</p>
+                <p class="possible">要相談</p>
+              <?php } elseif ($femele_screw_status == 'status_100') { ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/status/100.png" alt="100%">
+                <p class="operation_percent">100%</p>
+                <p class="possible">フル稼働</p>
+              <?php } else { ?>
+
+              <?php } ?>
             </li>
 
           </ul>
@@ -154,6 +226,16 @@ get_header(); ?>
   <section class="sec-content index-section__news_info">
     <div class="l-container index-section__news_info_container">
       <div class="index-section__news_info_newsbox">
+        <div class="index-section__news_info_newsbox_pre">
+          <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+
+              <?php the_content(); ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+        </div>
+        <div class="index-section__news_info_newsbox_inner">
         <h2>
           ニュース
         </h2>
@@ -167,7 +249,7 @@ get_header(); ?>
           $query = new WP_Query(
               array(
                   'paged' => $paged,
-                  'posts_per_page' => 5,
+                  'posts_per_page' => 3,
                   'post_type' => 'post'
               )
           );
@@ -190,6 +272,7 @@ get_header(); ?>
         <div class="btn-newslist">
           <a href="<?php echo home_url('/'); ?>news/">ニュース一覧</a>
         </div>
+      </div>
       </div>
       <div class="index-section__news_info_infobox">
         <div class="index-section__news_info_infobox_inner">

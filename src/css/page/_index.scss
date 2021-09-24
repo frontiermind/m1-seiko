@@ -528,17 +528,24 @@
     &_container{
       @include clearfix;
       padding: 0 20px;
+      display: block;
       @include min-screen($break_point_pc) {
       padding: 0 10px;
+      display: flex;
     }
     }
     &_newsbox{
-      background: $white;
-      padding: 40px 36px;
-      border-radius: 12px;
-      @include min-screen($break_point_pc) {
-        width: 740px;
-        float: left;
+      &_pre{
+        margin-bottom: 30px;
+      }
+      &_inner, &_pre{
+        background: $white;
+        padding: 40px 36px;
+        border-radius: 12px;
+        @include min-screen($break_point_pc) {
+          width: 740px;
+          float: left;
+        }
       }
 
       h2{
